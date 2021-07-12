@@ -19,7 +19,6 @@ from uploader import views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path(r'upload/',views.Homepage.as_view(),name = 'homepage'),
-    path(r'func_based/',views.upload_file,name = 'upload_data'),
     path(r'',views.MyFormUploderView.as_view(),name = "view"),
 
 ]

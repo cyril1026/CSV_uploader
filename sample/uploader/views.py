@@ -51,34 +51,10 @@ class MyFormUploderView(View):
         return render(request, self.template_name, {'form': form})
 
 
-def upload_file(request):
-    form = UploadFileForm() 
-    if request.method == 'POST':
-        form = UploadFileForm(request.POST, request.FILES)
-        csv_file = request.FILES["file"]
-        file_data = pd.read_csv(csv_file)
-        email_ids = file_data.emailid.tolist()
-        #send mail
-        delivery_status = [send_mail(email_id) for email_id in email_ids]
-        keys = file_data.keys()
-        values =  file_data.values
-        for value in values:
-            datas_list = list(zip(keys,value))
-            object_dict = {key: value for key, value in zip(keys,value)}
-            Student.objects.create(**object_dict)
-        data =  Student.objects.all()
-        if all(delivery_status):
-            messages.warning(request, 'Some mail devlivery are failed..!')
-        messages.success(request, 'Form submission successful')
-        return render(request, 'Dashboard.html',{'form': form,'datas':data})
-    else:
-        data =  Student.objects.all()
-        return render(request, 'Dashboard.html',{'form': form,'datas':data})
-
-
 def send_mail(email_id,messages="Hi.! Testing mail.!"):
     """
-    Needs to update the mail id and password's/secrte keys 
+    Needs to update the mail id and password's/secret keys 
+
     """
     print(email_id)
     # try:

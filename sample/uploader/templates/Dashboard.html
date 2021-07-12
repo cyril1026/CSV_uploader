@@ -953,7 +953,7 @@
                               <div class="dropzone dropzone-multiple p-0" data-dropzone
                                 data-options='{"url":"test/"}'>
                                 <div class="fallback">
-                                  <form action="{% url 'upload_data' %}" method="post" enctype="multipart/form-data">
+                                  <form action="{% url 'view' %}" method="post" enctype="multipart/form-data">
                                         {% csrf_token %}
                                     {# <input type="file" name="csv_file" id="csv_file" required="True" class="form-control"> #}
                                     {{ form.as_p }}
