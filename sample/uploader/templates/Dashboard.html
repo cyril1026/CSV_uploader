@@ -1,0 +1,2026 @@
+
+<html lang="en-US" dir="ltr" class="fontawesome-i2svg-active fontawesome-i2svg-complete chrome windows">
+{% load static %}
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="keyword" content="">
+  <meta name="description" content="">
+  {% if messages %}
+  <ul class="messages">
+      {% for message in messages %}
+      <li{% if message.tags %} class="{{ message.tags }}"{% endif %}>{{ message }}</li>
+      {% endfor %}
+  </ul>
+  {% endif %}
+
+  <!-- ===============================================-->
+  <!--    Document Title-->
+  <!-- ===============================================-->
+  <title>Dashboard</title>
+
+
+  <!-- ===============================================-->
+  <!--    Favicons-->
+  <!-- ===============================================-->
+  <style type="text/css">
+    svg:not(:root).svg-inline--fa {
+      overflow: visible
+    }
+
+    .svg-inline--fa {
+      display: inline-block;
+      font-size: inherit;
+      height: 1em;
+      overflow: visible;
+      vertical-align: -.125em
+    }
+
+    .svg-inline--fa.fa-lg {
+      vertical-align: -.225em
+    }
+
+    .svg-inline--fa.fa-w-1 {
+      width: .0625em
+    }
+
+    .svg-inline--fa.fa-w-2 {
+      width: .125em
+    }
+
+    .svg-inline--fa.fa-w-3 {
+      width: .1875em
+    }
+
+    .svg-inline--fa.fa-w-4 {
+      width: .25em
+    }
+
+    .svg-inline--fa.fa-w-5 {
+      width: .3125em
+    }
+
+    .svg-inline--fa.fa-w-6 {
+      width: .375em
+    }
+
+    .svg-inline--fa.fa-w-7 {
+      width: .4375em
+    }
+
+    .svg-inline--fa.fa-w-8 {
+      width: .5em
+    }
+
+    .svg-inline--fa.fa-w-9 {
+      width: .5625em
+    }
+
+    .svg-inline--fa.fa-w-10 {
+      width: .625em
+    }
+
+    .svg-inline--fa.fa-w-11 {
+      width: .6875em
+    }
+
+    .svg-inline--fa.fa-w-12 {
+      width: .75em
+    }
+
+    .svg-inline--fa.fa-w-13 {
+      width: .8125em
+    }
+
+    .svg-inline--fa.fa-w-14 {
+      width: .875em
+    }
+
+    .svg-inline--fa.fa-w-15 {
+      width: .9375em
+    }
+
+    .svg-inline--fa.fa-w-16 {
+      width: 1em
+    }
+
+    .svg-inline--fa.fa-w-17 {
+      width: 1.0625em
+    }
+
+    .svg-inline--fa.fa-w-18 {
+      width: 1.125em
+    }
+
+    .svg-inline--fa.fa-w-19 {
+      width: 1.1875em
+    }
+
+    .svg-inline--fa.fa-w-20 {
+      width: 1.25em
+    }
+
+    .svg-inline--fa.fa-pull-left {
+      margin-right: .3em;
+      width: auto
+    }
+
+    .svg-inline--fa.fa-pull-right {
+      margin-left: .3em;
+      width: auto
+    }
+
+    .svg-inline--fa.fa-border {
+      height: 1.5em
+    }
+
+    .svg-inline--fa.fa-li {
+      width: 2em
+    }
+
+    .svg-inline--fa.fa-fw {
+      width: 1.25em
+    }
+
+    .fa-layers svg.svg-inline--fa {
+      bottom: 0;
+      left: 0;
+      margin: auto;
+      position: absolute;
+      right: 0;
+      top: 0
+    }
+
+    .fa-layers {
+      display: inline-block;
+      height: 1em;
+      position: relative;
+      text-align: center;
+      vertical-align: -.125em;
+      width: 1em
+    }
+
+    .fa-layers svg.svg-inline--fa {
+      -webkit-transform-origin: center center;
+      transform-origin: center center
+    }
+
+    .fa-layers-counter,
+    .fa-layers-text {
+      display: inline-block;
+      position: absolute;
+      text-align: center
+    }
+
+    .fa-layers-text {
+      left: 50%;
+      top: 50%;
+      -webkit-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
+      -webkit-transform-origin: center center;
+      transform-origin: center center
+    }
+
+    .fa-layers-counter {
+      background-color: #ff253a;
+      border-radius: 1em;
+      -webkit-box-sizing: border-box;
+      box-sizing: border-box;
+      color: #fff;
+      height: 1.5em;
+      line-height: 1;
+      max-width: 5em;
+      min-width: 1.5em;
+      overflow: hidden;
+      padding: .25em;
+      right: 0;
+      text-overflow: ellipsis;
+      top: 0;
+      -webkit-transform: scale(.25);
+      transform: scale(.25);
+      -webkit-transform-origin: top right;
+      transform-origin: top right
+    }
+
+    .fa-layers-bottom-right {
+      bottom: 0;
+      right: 0;
+      top: auto;
+      -webkit-transform: scale(.25);
+      transform: scale(.25);
+      -webkit-transform-origin: bottom right;
+      transform-origin: bottom right
+    }
+
+    .fa-layers-bottom-left {
+      bottom: 0;
+      left: 0;
+      right: auto;
+      top: auto;
+      -webkit-transform: scale(.25);
+      transform: scale(.25);
+      -webkit-transform-origin: bottom left;
+      transform-origin: bottom left
+    }
+
+    .fa-layers-top-right {
+      right: 0;
+      top: 0;
+      -webkit-transform: scale(.25);
+      transform: scale(.25);
+      -webkit-transform-origin: top right;
+      transform-origin: top right
+    }
+
+    .fa-layers-top-left {
+      left: 0;
+      right: auto;
+      top: 0;
+      -webkit-transform: scale(.25);
+      transform: scale(.25);
+      -webkit-transform-origin: top left;
+      transform-origin: top left
+    }
+
+    .fa-lg {
+      font-size: 1.3333333333em;
+      line-height: .75em;
+      vertical-align: -.0667em
+    }
+
+    .fa-xs {
+      font-size: .75em
+    }
+
+    .fa-sm {
+      font-size: .875em
+    }
+
+    .fa-1x {
+      font-size: 1em
+    }
+
+    .fa-2x {
+      font-size: 2em
+    }
+
+    .fa-3x {
+      font-size: 3em
+    }
+
+    .fa-4x {
+      font-size: 4em
+    }
+
+    .fa-5x {
+      font-size: 5em
+    }
+
+    .fa-6x {
+      font-size: 6em
+    }
+
+    .fa-7x {
+      font-size: 7em
+    }
+
+    .fa-8x {
+      font-size: 8em
+    }
+
+    .fa-9x {
+      font-size: 9em
+    }
+
+    .fa-10x {
+      font-size: 10em
+    }
+
+    .fa-fw {
+      text-align: center;
+      width: 1.25em
+    }
+
+    .fa-ul {
+      list-style-type: none;
+      margin-left: 2.5em;
+      padding-left: 0
+    }
+
+    .fa-ul>li {
+      position: relative
+    }
+
+    .fa-li {
+      left: -2em;
+      position: absolute;
+      text-align: center;
+      width: 2em;
+      line-height: inherit
+    }
+
+    .fa-border {
+      border: solid .08em #eee;
+      border-radius: .1em;
+      padding: .2em .25em .15em
+    }
+
+    .fa-pull-left {
+      float: left
+    }
+
+    .fa-pull-right {
+      float: right
+    }
+
+    .fa.fa-pull-left,
+    .fab.fa-pull-left,
+    .fal.fa-pull-left,
+    .far.fa-pull-left,
+    .fas.fa-pull-left {
+      margin-right: .3em
+    }
+
+    .fa.fa-pull-right,
+    .fab.fa-pull-right,
+    .fal.fa-pull-right,
+    .far.fa-pull-right,
+    .fas.fa-pull-right {
+      margin-left: .3em
+    }
+
+    .fa-spin {
+      -webkit-animation: fa-spin 2s infinite linear;
+      animation: fa-spin 2s infinite linear
+    }
+
+    .fa-pulse {
+      -webkit-animation: fa-spin 1s infinite steps(8);
+      animation: fa-spin 1s infinite steps(8)
+    }
+
+    @-webkit-keyframes fa-spin {
+      0% {
+        -webkit-transform: rotate(0);
+        transform: rotate(0)
+      }
+
+      100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg)
+      }
+    }
+
+    @keyframes fa-spin {
+      0% {
+        -webkit-transform: rotate(0);
+        transform: rotate(0)
+      }
+
+      100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg)
+      }
+    }
+
+    .fa-rotate-90 {
+      -webkit-transform: rotate(90deg);
+      transform: rotate(90deg)
+    }
+
+    .fa-rotate-180 {
+      -webkit-transform: rotate(180deg);
+      transform: rotate(180deg)
+    }
+
+    .fa-rotate-270 {
+      -webkit-transform: rotate(270deg);
+      transform: rotate(270deg)
+    }
+
+    .fa-flip-horizontal {
+      -webkit-transform: scale(-1, 1);
+      transform: scale(-1, 1)
+    }
+
+    .fa-flip-vertical {
+      -webkit-transform: scale(1, -1);
+      transform: scale(1, -1)
+    }
+
+    .fa-flip-both,
+    .fa-flip-horizontal.fa-flip-vertical {
+      -webkit-transform: scale(-1, -1);
+      transform: scale(-1, -1)
+    }
+
+    :root .fa-flip-both,
+    :root .fa-flip-horizontal,
+    :root .fa-flip-vertical,
+    :root .fa-rotate-180,
+    :root .fa-rotate-270,
+    :root .fa-rotate-90 {
+      -webkit-filter: none;
+      filter: none
+    }
+
+    .fa-stack {
+      display: inline-block;
+      height: 2em;
+      position: relative;
+      width: 2.5em
+    }
+
+    .fa-stack-1x,
+    .fa-stack-2x {
+      bottom: 0;
+      left: 0;
+      margin: auto;
+      position: absolute;
+      right: 0;
+      top: 0
+    }
+
+    .svg-inline--fa.fa-stack-1x {
+      height: 1em;
+      width: 1.25em
+    }
+
+    .svg-inline--fa.fa-stack-2x {
+      height: 2em;
+      width: 2.5em
+    }
+
+    .fa-inverse {
+      color: #fff
+    }
+
+    .sr-only {
+      border: 0;
+      clip: rect(0, 0, 0, 0);
+      height: 1px;
+      margin: -1px;
+      overflow: hidden;
+      padding: 0;
+      position: absolute;
+      width: 1px
+    }
+
+    .sr-only-focusable:active,
+    .sr-only-focusable:focus {
+      clip: auto;
+      height: auto;
+      margin: 0;
+      overflow: visible;
+      position: static;
+      width: auto
+    }
+
+    .svg-inline--fa .fa-primary {
+      fill: var(--fa-primary-color, currentColor);
+      opacity: 1;
+      opacity: var(--fa-primary-opacity, 1)
+    }
+
+    .svg-inline--fa .fa-secondary {
+      fill: var(--fa-secondary-color, currentColor);
+      opacity: .4;
+      opacity: var(--fa-secondary-opacity, .4)
+    }
+
+    .svg-inline--fa.fa-swap-opacity .fa-primary {
+      opacity: .4;
+      opacity: var(--fa-secondary-opacity, .4)
+    }
+
+    .svg-inline--fa.fa-swap-opacity .fa-secondary {
+      opacity: 1;
+      opacity: var(--fa-primary-opacity, 1)
+    }
+
+    .svg-inline--fa mask .fa-primary,
+    .svg-inline--fa mask .fa-secondary {
+      fill: #000
+    }
+
+    .fad.fa-inverse {
+      color: #fff
+    }
+    @media (min-width: 576px) {
+    #add_dialog{
+      width: 800px !important;
+    }
+  }
+  @media (max-width: 576px) {
+    #add_dialog{
+      width: 400px !important;
+    }
+  }
+    #addstudent{
+      width: 1200px !important;
+    }
+  
+    
+    
+  </style>
+  <link rel="apple-touch-icon" sizes="180x180" href= "{% static "assets/img/favicons/apple-touch-icon.png" %}">
+  <link rel="icon" type="image/png" sizes="32x32" href={% static "assets/img/favicons/favicon-32x32.png" %}>
+  <link rel="icon" type="image/png" sizes="16x16" href={% static "assets/img/favicons/favicon-16x16.png" %}>
+  <link rel="shortcut icon" type="image/x-icon" href={% static "assets/img/favicons/favicon.ico" %}>
+  <link rel="manifest" href={% static "assets/img/favicons/manifest.json" %}>
+  <meta name="msapplication-TileImage" content= {% static "assets/img/favicons/mstile-150x150.png" %}>
+  <meta name="theme-color" content="#ffffff">
+
+
+  <!-- ===============================================-->
+  <!--    Stylesheets-->
+  <!-- ===============================================-->
+  <script src={% static "assets/js/config.navbar-vertical.js" %}></script>
+  <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
+  <link href={% static "assets/lib/perfect-scrollbar/perfect-scrollbar.css" %} rel="stylesheet">
+  <link href={% static "assets/lib/prismjs/prism-okaidia.css" %} rel="stylesheet">
+  <link href={% static "assets/css/theme.css" %} rel="stylesheet">
+  <link href={% static "assets/lib/dropzone/dropzone.min.css" %} rel="stylesheet">
+  <link href={% static "assets/lib/flatpickr/flatpickr.min.css"  %} rel="stylesheet">
+  <link href={% static "assets/lib/select2/select2.min.css"  %} rel="stylesheet">
+  <link href= {% static "assets/lib/datatables-bs4/dataTables.bootstrap4.min.css" %} rel="stylesheet">
+  <link href= {% static "assets/lib/datatables.net-responsive-bs4/responsive.bootstrap4.css" %} rel="stylesheet">
+</head>
+
+
+<body class="" >
+
+  <!-- ===============================================-->
+  <!--    Main Content-->
+  <!-- ===============================================-->
+  <main class="main" id="top">
+
+
+
+    <div class="container-fluid" data-layout="container-fluid">
+      <div class="content">
+        <nav class="navbar navbar-top sticky-kit navbar-expand bg-white">
+
+          <button class="btn navbar-toggler-humburger-icon navbar-toggler mr-1 mr-sm-3" type="button"
+            data-toggle="collapse" data-target="#navbarVerticalCollapse" aria-controls="navbarVerticalCollapse"
+            aria-expanded="false" aria-label="Toggle Navigation"><span class="navbar-toggle-icon"><span
+                class="toggle-line"></span></span></button>
+          <a class="navbar-brand mr-1 mr-sm-3" href="index.html" >
+            <div class="d-flex align-items-center">
+              <img class=" ml-5" src="" alt="">
+            </div>
+          </a>
+          <ul class="navbar-nav navbar-nav-icons ml-auto flex-row align-items-center" >
+        
+     		               
+      <li class="nav-item headertitle">
+            <a class="btn btn-success mr-lg-5"  href="#">Messaging</a>
+     </li>
+           <li class="nav-item "><a class="nav-link pl-lg-5" id="navbarDropdownUser" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+               <div class="">
+                <span class="fas fa-user-circle" id="proicon" style="font-size:30px; color:black"></span>
+
+               </div>
+             </a>
+             <div class="dropdown-menu dropdown-menu-right py-0" aria-labelledby="navbarDropdownUser">
+               <div class="bg-white rounded-soft py-2">
+                 <a class="dropdown-item font-weight-bold text-warning" href="#!"><svg class="svg-inline--fa fa-crown fa-w-20 mr-1" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="crown" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512" data-fa-i2svg=""><path fill="currentColor" d="M528 448H112c-8.8 0-16 7.2-16 16v32c0 8.8 7.2 16 16 16h416c8.8 0 16-7.2 16-16v-32c0-8.8-7.2-16-16-16zm64-320c-26.5 0-48 21.5-48 48 0 7.1 1.6 13.7 4.4 19.8L476 239.2c-15.4 9.2-35.3 4-44.2-11.6L350.3 85C361 76.2 368 63 368 48c0-26.5-21.5-48-48-48s-48 21.5-48 48c0 15 7 28.2 17.7 37l-81.5 142.6c-8.9 15.6-28.9 20.8-44.2 11.6l-72.3-43.4c2.7-6 4.4-12.7 4.4-19.8 0-26.5-21.5-48-48-48S0 149.5 0 176s21.5 48 48 48c2.6 0 5.2-.4 7.7-.8L128 416h384l72.3-192.8c2.5.4 5.1.8 7.7.8 26.5 0 48-21.5 48-48s-21.5-48-48-48z"></path></svg><!-- <span class="fas fa-crown mr-1"></span> --><span>Go Pro</span></a>
+
+                 <div class="dropdown-divider"></div>
+             
+                 <a class="dropdown-item" href="">Profile &amp; Account</a>
+                 <a class="dropdown-item" href="">Logout</a>
+               
+               </div>
+             </div>
+           </li>
+          </ul>
+        </nav>
+        <!-- <form action="/login_code" id="clear_filter" method="post">
+          {% csrf_token %}
+          <input type="text" name="email" value="{{member.emailid}}">
+          <input type="text" name="password" value="{{member.password}}">
+        </form> -->
+        <div class="row mt-3">
+          <div class="col-lg-3 mb-3">
+            <div class="card">
+              <div class="card-header d-flex flex-between-center bg-light py-2">
+               
+                <h5 class="mb-0">Filter</h5><span class=""><a href="" >Clear All</a></span>
+             
+            
+              </div>
+              <div class="card-body pb-0 pt-1 mb-2 scrollbar perfect-scrollbar">
+                <form action="" id="stu_filter" method="post">
+                 
+
+                  <div class="form-group mb-0">
+                    <div class="mt-2 mb-2">
+                      <a class="btn p-0 border-0 btn-block text-left nav-link dropdown-indicator fs--1" type="button"
+                        data-toggle="collapse" data-target="#Example1" aria-expanded="false"
+                        aria-controls="multiCollapseExample2">Branch</a>
+                    </div>
+                    <div class="collapse " id="Example1">
+
+                      <select class="custom-select form-control" name="qual">
+                        <option value="">Select Qualification</option>
+
+                       
+                      </select>
+                    </div>
+                    <div class="mt-2 mb-2 border-top">
+                      <a class="btn pl-0 pb-0 border-0 btn-block text-left nav-link dropdown-indicator fs--1"
+                        type="button" data-toggle="collapse" data-target="#Example2" aria-expanded="false"
+                        aria-controls="multiCollapseExample2">Department</a>
+                    </div>
+                    <div class="collapse p-2" id="Example2">
+                      <div class="form-group mb-0">
+                        <select class="form-control custom-select" name="dept">
+                        
+                          
+                        </select>
+
+
+                       
+                      </div>
+
+
+                    </div>
+                    <div class="mt-2 mb-2 border-top">
+                      <a class="btn pl-0 pb-0 border-0 btn-block text-left nav-link dropdown-indicator fs--1"
+                        type="button" data-toggle="collapse" data-target="#Example3" aria-expanded="false"
+                        aria-controls="multiCollapseExample2">Marks</a>
+                    </div>
+                    <div class="collapse p-2 mt-2" id="Example3">
+
+                      <select class="form-control custom-select" size="1" name="marks">
+                        <option value="">Select Marks</option>
+                      
+                      </select>
+                    </div>
+                    <div class="mt-2 mb-2 border-top">
+                      <a class="btn pl-0 pb-0 border-0 btn-block text-left nav-link dropdown-indicator fs--1"
+                        type="button" data-toggle="collapse" data-target="#Example4" aria-expanded="false"
+                        aria-controls="multiCollapseExample2">Passedout Year</a>
+                    </div>
+                    <div class="collapse p-2" id="Example4">
+                      <select class="form-control custom-select" size="1" name="yop">
+                        <option value="">Select Yearpassedout</option>
+
+                      </select>
+
+
+                    </div>
+                    <div class="mt-2 mb-2 border-top">
+                      <a class="btn pl-0 pb-0 border-0 btn-block text-left nav-link dropdown-indicator fs--1"
+                        type="button" data-toggle="collapse" data-target="#Example5" aria-expanded="false"
+                        aria-controls="multiCollapseExample2">Gender</a>
+                    </div>
+                    <div class="collapse p-0 pl-2 pt-2 " id="Example5">
+                      <select class="form-control custom-select" size="1" name="gender">
+                        <option value="">Select Gender</option>
+
+                      
+                      </select>
+                    </div>
+                    <div class="mt-2 mb-3 border-top">
+                      <a class="btn pl-0 pb-0 border-0 btn-block text-left nav-link dropdown-indicator fs--1"
+                        type="button" data-toggle="collapse" data-target="#Example6" aria-expanded="false"
+                        aria-controls="multiCollapseExample2">Arrear Count</a>
+                    </div>
+                    <div class="collapse p-2" id="Example6">
+                      <select class="form-control custom-select" size="1" name="arr">
+                        <option value="">Select Arrears</option>
+
+                      
+                      </select>
+                    </div>
+                    <hr class="border-dashed border-bottom-0">
+                    <button class="btn btn-primary btn-block btn-sm mr-1 mb-1" type="submit">Apply Filters
+                    </button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-5">
+            <div class="card mb-3 overflow-hidden" style="">
+              <div class="card-header bg-light">
+                <div class="row align-items-center">
+                  <div class="col-sm-4">
+                    <h6 class="mt-1" style="margin-left: 10px;">Uploaded Student List</h6>
+                  </div>
+                  <div class="col-sm 3 ml-6">
+                    <h6 class="float-right">Year Wise</h6>
+                  </div>
+                  <form id="form2" method="POST" action="yop_deptfilter">
+                  
+                    <div class="col-sm ">
+                      <select class="custom-select" name="yop">
+                        
+                      </select>
+                    </div>
+                  </form>
+                </div>
+              </div>
+              <div class="card-body p-0">
+               
+
+               
+                <div class="row no-gutters align-items-center py-2 position-relative border-bottom border-200">
+                  <div class="col pl-card py-1 position-static">
+                    <div class="media align-items-center">
+                      <div class="avatar avatar-xl mr-3">
+                        <div class="avatar-name rounded-circle bg-soft-primary text-dark"><span
+                            class="fs-0 text-primary"></span></div>
+                      </div>
+                      <div class="media-body">
+                        <h6 class="mb-0 d-flex align-items-center"><a class="text-800 stretched-link"
+                            href="#!"></a></h6>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col py-1">
+                    <div class="row flex-end-center no-gutters">
+                      <div class="col-auto pr-2">
+                        
+                        <div class="fs--1 font-weight-semi-bold"></div>
+                      </div>
+                      <div class="col-5 pr-card pl-2">
+                        <div class="progress mr-2" style="height: 5px;">
+                        
+                          <div class="progress-bar rounded-capsule" role="progressbar" style="width:4%"
+                            aria-valuenow="" aria-valuemin="0" aria-valuemax="100"></div>
+                           
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+               
+                
+                <!-- <div class="row no-gutters align-items-center py-2 position-relative border-bottom border-200">
+                  <div class="col pl-card py-1 position-static">
+                    <div class="media align-items-center">
+                      <div class="avatar avatar-xl mr-3">
+                        <div class="avatar-name rounded-circle bg-soft-success text-dark"><span
+                            class="fs-0 text-success">R</span></div>
+                      </div>
+                      <div class="media-body">
+                        <h6 class="mb-0 d-flex align-items-center"><a class="text-800 stretched-link" href="#!">Mech</a>
+                        </h6>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col py-1">
+                    <div class="row flex-end-center no-gutters">
+                      <div class="col-auto pr-2">
+                        <div class="fs--1 font-weight-semi-bold">382</div>
+                      </div>
+                      <div class="col-5 pr-card pl-2">
+                        <div class="progress mr-2" style="height: 5px;">
+                          <div class="progress-bar rounded-capsule" role="progressbar" style="width: 38%"
+                            aria-valuenow="38" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="row no-gutters align-items-center py-2 position-relative border-bottom border-200">
+                  <div class="col pl-card py-1 position-static">
+                    <div class="media align-items-center">
+                      <div class="avatar avatar-xl mr-3">
+                        <div class="avatar-name rounded-circle bg-soft-info text-dark"><span
+                            class="fs-0 text-info">B</span></div>
+                      </div>
+                      <div class="media-body">
+                        <h6 class="mb-0 d-flex align-items-center"><a class="text-800 stretched-link" href="#!">ECE</a>
+                        </h6>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col py-1">
+                    <div class="row flex-end-center no-gutters">
+                      <div class="col-auto pr-2">
+                        <div class="fs--1 font-weight-semi-bold">382</div>
+                      </div>
+                      <div class="col-5 pr-card pl-2">
+                        <div class="progress mr-2" style="height: 5px;">
+                          <div class="progress-bar rounded-capsule" role="progressbar" style="width: 38%"
+                            aria-valuenow="38" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="row no-gutters align-items-center py-2 position-relative border-bottom border-200">
+                  <div class="col pl-card py-1 position-static">
+                    <div class="media align-items-center">
+                      <div class="avatar avatar-xl mr-3">
+                        <div class="avatar-name rounded-circle bg-soft-warning text-dark"><span
+                            class="fs-0 text-warning">R</span></div>
+                      </div>
+                      <div class="media-body">
+                        <h6 class="mb-0 d-flex align-items-center"><a class="text-800 stretched-link" href="#!">EEE</a>
+                        </h6>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col py-1">
+                    <div class="row flex-end-center no-gutters">
+                      <div class="col-auto pr-2">
+                        <div class="fs--1 font-weight-semi-bold">382</div>
+                      </div>
+                      <div class="col-5 pr-card pl-2">
+                        <div class="progress mr-2" style="height: 5px;">
+                          <div class="progress-bar rounded-capsule" role="progressbar" style="width: 38%"
+                            aria-valuenow="38" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div> -->
+              </div>
+              <div class="card-footer bg-light p-0"><a class="btn btn-sm btn-link btn-block py-2" href="#!">Show all
+                  Department<svg class="svg-inline--fa fa-chevron-right fa-w-10 ml-1 fs--2" aria-hidden="true"
+                    focusable="false" data-prefix="fas" data-icon="chevron-right" role="img"
+                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" data-fa-i2svg="">
+                    <path fill="currentColor"
+                      d="M285.476 272.971L91.132 467.314c-9.373 9.373-24.569 9.373-33.941 0l-22.667-22.667c-9.357-9.357-9.375-24.522-.04-33.901L188.505 256 34.484 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L285.475 239.03c9.373 9.372 9.373 24.568.001 33.941z">
+                    </path>
+                  </svg><!-- <span class="fas fa-chevron-right ml-1 fs--2"></span> --></a></div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="card" style="height: 330px;">
+              <div class="card-header bg-light d-flex flex-between-center py-2">
+                <h6 class="mb-0">Total Student Upload Student Details</h6>
+                <div class="dropdown text-sans-serif btn-reveal-trigger">
+                  <div class="dropdown-menu dropdown-menu-right border py-0" aria-labelledby="dropdown-bandwidth-saved">
+                    <div class="bg-white py-2"><a class="dropdown-item" href="#!">View</a><a class="dropdown-item"
+                        href="#!">Export</a>
+                      <div class="dropdown-divider"></div><a class="dropdown-item text-danger" href="#!">Remove</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card-body d-flex flex-center">
+                <!--chart-->
+                <div class="progress-circle" data-options='{"progress":{{ context }}}'></div>
+              </div>
+              <form id="form1" action="" method="POST">
+              
+                <div class="card-footer bg-light py-2">
+                  <div class="row flex-between-center">
+                    <div class="col-auto">
+                      <select class="custom-select custom-select-sm" name="yop" id="yop">
+                      
+                      </select>
+                    </div>
+                    <div class="col-auto"><a class="fs--1" href="#!">Try Premium</a></div>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+        <div class="card mt-3">
+          <div class="card-header">
+            <div class="row align-items-center justify-content-between">
+              <div class="col-lg-12 mb-3">
+                <h5 class="fs-0 mb-0 text-nowrap py-2 py-xl-0">Total Student List</h5>
+              </div>
+              <!-- alert -->
+              <div class="modal fade" id="downloadcheck" tabindex="-1" role="dialog" style="display: none;"
+                aria-labelledby="modalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header p-3">
+                      <h6 class="modal-title text-warning">Oops!.. Please select atleast one user to download</h6>
+                      <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+              <div class="modal fade" id="mailcheck" tabindex="-1" role="dialog" style="display: none;"
+                aria-labelledby="modalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header p-3">
+                      <h6 class="modal-title text-warning">Oops!.. Please select atleast one user to send mail</h6>
+                      <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+              <div class="col-6 col-sm-auto align-items-center pr-0">
+                <button class="btn btn-outline-primary1 border-400 btn-sm" type="button" data-toggle="modal"
+                  data-target="#addstudent"><span class="fas fa-user" data-fa-transform=""></span><span
+                    class="d-none d-sm-inline-block ml-1">Add Student</span></button>
+           
+              </div>
+           
+              <form action="" method="post" enctype="multipart/form-data">
+               
+                <div class="col-6 col-sm-auto ml-auto pl-0 ">
+                  <div>
+                    <a class="fs--1 mr-3" type="button" href="" data-toggle="modal" data-target="#download_Sample"><span class="fas fa-file"
+                        data-fa-transform=""></span><span class="d-none d-sm-inline-block ml-1">Download Sample
+                        File</span></span></a>
+                        <!-- Modal-->
+
+                    <button class="btn btn-outline-warning btn-sm" type="button" data-toggle="modal"
+                      data-target="#exampleModal1"><span class="fas fa-upload" data-fa-transform=""></span><span
+                        class="d-none d-sm-inline-block ml-1">Click to Upload</span></button>
+                    <!-- upload button modal -->
+                    <div class="modal" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel"
+                      style="display: none;" aria-hidden="true">
+                      <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Branch Upload</h5>
+                            <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span
+                                class="font-weight-light" aria-hidden="true">&times;</span></button>
+                          </div>
+                          <div class="modal-body">
+                            <div class="text-center">
+                              <b>UPLOAD FILE</b>
+                            </div>
+                            <div class="mt-3">
+                              <div class="dropzone dropzone-multiple p-0" data-dropzone
+                                data-options='{"url":"test/"}'>
+                                <div class="fallback">
+                                  <form action="{% url 'upload_data' %}" method="post" enctype="multipart/form-data">
+                                        {% csrf_token %}
+                                    {# <input type="file" name="csv_file" id="csv_file" required="True" class="form-control"> #}
+                                    {{ form.as_p }}
+                                    <button type="submit" class="btn btn-primary">Upload</button>
+
+                                  </form>
+              </form>
+            </div>
+         
+          </div>
+        </div>
+        <div class="card p-1 mt-3 border bg-200">
+          <div class="card-body">
+            <div class="row">
+              <div class="col-lg-12">
+                <div class="mt-2">
+                  <p style="font-size: small;">Upload a batch file to continue<br><b>Please note the following things
+                      before proceeding further.</b></p>
+                  <ol class="ml-4">
+                    <li style="font-size: small;">The Student Mentioned Should be Branch/Department/Year</li>
+                    <li style="font-size: small;">The Profession ID for all the Student Generated Automatically</li>
+                    <li style="font-size: small;">Student will recived Email and Password Automatically</li>
+                  </ol>
+                  <p style="font-size: small;"><b>In case of any issues,please<a class="text-primary"
+                        href="#">download sample file</a></b></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- <div class="modal-footer">
+                            
+                          </div> -->
+      </div>
+    </div>
+    </div>
+    </div>
+   
+    <button class="btn btn-primary btn-sm" type="button" data-toggle="modal" id="mailsend"><span class="fas fa-envelope"
+        data-fa-transform="shrink-3 down-2"></span><span class="d-none d-sm-inline-block ml-1">Send
+        Email</span></button>
+    <div class="modal modal-fixed-right fade" id="sendmail" tabindex="-1" role="dialog" style=" padding-right: 17px;"
+      aria-labelledby="exampleModalRightLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-vertical" role="document">
+        <div class="modal-content border-0 vh-100 scrollbar perfect-scrollbar">
+          <div class="modal-header modal-header-settings">
+            <div class="z-index-1 py-1 flex-grow-1">
+              <h6 class="text-white" id="settings-modal-label">Compose Interview Call Letter</h6>
+              <p class="mb-0 fs--1 text-white opacity-75">1 Recipient(s)</p>
+            </div>
+            <button class="close z-index-1" type="button" data-dismiss="modal" aria-label="Close"><span
+                class="font-weight-light" aria-hidden="true">&times;</span></button>
+          </div>
+          <div class="modal-body px-card">
+            <h5 class="fs-0">Interview Type</h5>
+            <div class="form-group form-check mb-0">
+              <input class="form-check-input" id="Walkinraio" type="radio" name="interview_type" value="On Campus"
+                checked>
+              <label class="form-check-label" for="Walkinraio">On Campus</label>
+            </div>
+            <div class="form-group form-check">
+              <input class="form-check-input" id="TelephonicRadio" type="radio" name="interview_type"
+                value="Off Campus/Job Fair/Walk in Interview ">
+              <label class="form-check-label" for="TelephonicRadio">Off Campus/Job Fair/Walk in Interview </label>
+            </div>
+            <div id="walkininterview">
+              <form action="" id="oncampus" method="">
+               
+                <input class="form-check-input" id="TelephonicRadio" type="hidden" name="interview_type"
+                  value="On Campus">
+                <input type="text" id="email_selected_oncampus" name="jobseeker_emailid">
+                <div class="form-group mb-2">
+                  <label class="mb-1" for="name">Subject<span class="text-danger">*</span></label>
+                  <input class="form-control form-control-sm" id="walkinsubject" type="text" name="subject"
+                    placeholder="" required>
+                </div>
+                <div class="form-group mb-2">
+                  <label class="mb-1" for="name">Job Position<span class="text-danger">*</span></label>
+                  <input class="form-control form-control-sm" id="walkinjobpositionname" type="text" name="job_position"
+                    placeholder="Enter Job Position" required>
+                </div>
+                <div class="form-group mb-2">
+                  <label class="mb-1" for="name">Company Name<span class="text-danger">*</span></label>
+                  <input class="form-control form-control-sm" id="walkcompanyname" type="text" name="companyname"
+                    placeholder="Enter company name" required>
+                </div>
+                <div class="form-group mb-2">
+                  <label class="mb-1" for="exampleFormControlTextarea1">Interview Details<span
+                      class="text-danger">*</span></label>
+                  <textarea class="form-control form-control-sm" id="exampleFormControlTextarea1"
+                    name="interview_details" placeholder="Enter details of the interview process" rows="3"
+                    required></textarea>
+                </div>
+                <div class="form-group mb-2">
+                  <label class="mb-1" for="venue1">Venue Details<span class="text-danger">*</span></label>
+                  <textarea class="form-control form-control-sm" id="venue1" name="venue"
+                    placeholder="Enter Interview venue Details" rows="3" required></textarea>
+                </div>
+                <label>Salary Package<span class="text-danger">*</span></label>
+                <br>
+                <label>From</label>
+                <div class="form-row">
+                  <div class="col-6">
+
+                    <div class="form-gorup">
+
+                      <select class="form-control form-control-sm fs--1" id="Experience1" name="sf">
+                        <option value="" disabled="" selected="">Lacs</option>
+
+                       
+
+                      </select>
+                    </div>
+                  </div>
+                  <div class="col-6">
+                    <div class="form-group">
+                      <select class="form-control form-control-sm fs--1" id="Experience2" name="sf1">
+                        <option value="" disabled="" selected="">Thousands</option>
+
+                       
+                      </select>
+                    </div>
+                  </div>
+                </div>
+                <label>To</label>
+                <div class="form-row">
+                  <div class="col-6">
+
+                    <div class="form-gorup">
+
+                      <select class="form-control form-control-sm fs--1" id="Experience1" name="st">
+                        <option value="" disabled="" selected="">Lacs</option>
+
+                        
+                      </select>
+                    </div>
+                  </div>
+                  <div class="col-6">
+                    <div class="form-group">
+
+                      <select class="form-control form-control-sm fs--1" id="Experience2" name="st1">
+                        <option value="" disabled="" selected="">Thousands</option>
+
+                        
+                      </select>
+                    </div>
+                  </div>
+                </div>
+
+
+                <label class="mb-1" for="datepicker">Interview Date<span class="text-danger">*</span></label>
+                <div class="form-row mb-0">
+                  <div class="col-4">
+                    <div class="form-group mb-2">
+                      <input class="form-control form-control-sm datetimepicker" id="walkincityinterviewdate"
+                        name="date" type="text" data-options='{"dateFormat":"d/m/y"}'>
+                    </div>
+                  </div>
+                  <div class="col-3">
+                    <div class="form-group mb-2">
+
+                      <select class="form-control form-control-sm" name="date_add" id="selectBox"
+                        onchange="changeFunc();">
+                        <option value=".">None</option>
+                        <option value="and">and</option>
+                        <option value="to">to</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="col-4">
+                    <input class="form-control form-control-sm datetimepicker" name="date1" id="datepickerselect"
+                      style="display: none" type="text" data-options='{"dateFormat":"d/m/y"}'>
+                  </div>
+                </div>
+                <label class="mb-1" for="datepicker">Reporting Time<span class="text-danger">*</span></label>
+                <div class="form-row">
+                  <div class="col-4">
+                    <div class="form-group mb-2">
+                      <input class="form-control form-control-sm datetimepicker" name="time" id="datepicker" type="text"
+                        data-options='{"enableTime":true,"dateFormat":"d/m/y H:i"}'>
+                    </div>
+                  </div>
+                  <div class="col-3">
+                    <div class="form-group mb-2">
+                      <select class="form-control form-control-sm" id="selectBox1" name="time_add"
+                        onchange="changeFunc1();">
+                        <option value=".">None</option>
+                        <option value="and">and</option>
+                        <option value="to">to</option>
+                      </select>
+
+                    </div>
+                  </div>
+                  <div class="col-4">
+                    <input class="form-control form-control-sm datetimepicker" name="time1" id="datepickerselect1"
+                      style="display: none" type="text" data-options='{"dateFormat":"d/m/y"}'>
+                  </div>
+                </div>
+
+                <div class="form-group mb-0">
+                  <label class="mb-1" for="name">Save this template as </label>
+                  <input class="form-control form-control-sm" id="name" type="text"
+                    placeholder="Enter Template name Here">
+                </div>
+                <!-- <div class="form-group mb-o">
+                  
+                    <div class="min-vh-50">
+  
+                      <textarea class="tinymce" name="content"></textarea>
+  
+                    </div>
+                 
+                </div> -->
+
+                <hr class="border-dashed border-bottom-0" />
+                <div class="row">
+                  <div class="col"></div>
+                  <div class="col-auto">
+                    <a class="btn border-0 btn-sm text-warning mr-0" type="button">Save as Draft</a>
+                    <button class="btn btn-outline-success btn-sm mr-1" data-toggle="modal"
+                      data-target="#walkinpreviewmailmodel" id="previewmailmodel" type="button"
+                      onclick="previewmaildata()">Preview Mail</button>
+                    <button class="btn btn-primary btn-sm" type="button" onclick="walkin()">Send Mail</button>
+                  </div>
+                </div>
+              </form>
+            </div>
+            <div id="telephonicinterview" style="display:none;">
+              <form action="" id="offcampus" method="">
+             
+                <input class="form-check-input" id="TelephonicRadio" type="hidden" name="interview_type"
+                  value="Off Campus/Job Fair/Walk in Interview ">
+                <input type="text" id="email_selected_offcampus" name="jobseeker_emailid">
+                <div class="form-group mb-2">
+                  <label class="mb-1" for="name">Subject<span class="text-danger">*</span></label>
+                  <input class="form-control form-control-sm" id="telesubject" type="text" name="subject" placeholder=""
+                    required>
+                </div>
+                <div class="form-group mb-2">
+                  <label class="mb-1" for="name">Job Position<span class="text-danger">*</span></label>
+                  <input class="form-control form-control-sm" id="telephonicjobpositionname" type="text"
+                    name="jobposition" placeholder="Enter Job Position" required>
+                </div>
+                <div class="form-group mb-2">
+                  <label class="mb-1" for="name">Company Name<span class="text-danger">*</span></label>
+                  <input class="form-control form-control-sm" id="telephoniccompanyname" type="text" name="companyname"
+                    placeholder="Enter company name" required>
+                </div>
+                <div class="form-group mb-2">
+                  <label class="mb-1" for="exampleFormControlTextarea1">Interview Details<span
+                      class="text-danger">*</span></label>
+                  <textarea class="form-control form-control-sm" id="exampleFormControlTextarea1"
+                    name="interview_details" placeholder="Enter details of Interview Process" rows="3"
+                    required></textarea>
+                </div>
+                <div class="form-group mb-2">
+                  <label class="mb-1" for="venue2">Venue Details<span class="text-danger">*</span></label>
+                  <textarea class="form-control form-control-sm" id="venue2" name="venue"
+                    placeholder="Enter Interview venue Details" rows="3" required></textarea>
+                </div>
+                <div class="form-group mb-2">
+                  <label class="mb-1" for="exampleFormControlSelect1">Interview Location<span
+                      class="text-danger">*</span></label>
+                 
+                </div>
+                <label class="mb-1" for="name">Contact Person</label>
+                <div class="row">
+                  <div class="col-6">
+                    <div class="form-group ">
+                      <label class="mb-1" for="name">Name<span class="text-danger">*</span></label>
+                      <input class="form-control form-control-sm" id="name" name="cpname" type="text" placeholder="Name"
+                        required>
+                    </div>
+                  </div>
+                  <div class="col-6">
+                    <div class="form-group">
+                      <label class="mb-1" for="name">Mobile Number<span class="text-danger">*</span></label>
+                      <input class="form-control form-control-sm" id="name" name="cpno" type="number"
+                        oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
+                        pattern=".{10}" placeholder="Mobile No" maxlength="10" required>
+                    </div>
+                  </div>
+                </div>
+                <label>Salary Package<span class="text-danger">*</span></label>
+                <br>
+                <label>From</label>
+                <div class="form-row">
+                  <div class="col-6">
+
+                    <div class="form-gorup">
+
+                      <select class="form-control form-control-sm fs--1" id="Experience1" name="salary_fr">
+                       
+
+                      </select>
+                    </div>
+                  </div>
+                  <div class="col-6">
+                    <div class="form-group">
+                      <select class="form-control form-control-sm fs--1" id="Experience2" name="salary_fr1">
+                        <option value="" disabled="" selected="">Thousands</option>
+
+                      
+
+                      </select>
+                    </div>
+                  </div>
+                </div>
+                <label>To</label>
+                <div class="form-row">
+                  <div class="col-6">
+
+                    <div class="form-gorup">
+
+                      <select class="form-control form-control-sm fs--1" id="Experience1" name="salary_t">
+                        <option value="" disabled="" selected="">Lacs</option>
+
+                        
+                      </select>
+                    </div>
+                  </div>
+                  <div class="col-6">
+                    <div class="form-group">
+
+                      <select class="form-control form-control-sm fs--1" id="Experience2" name="salary_t1">
+                        <option value="" disabled="" selected="">Thousands</option>
+
+                      </select>
+                    </div>
+                  </div>
+                </div>
+                <label class="mb-1" for="datepicker">Interview Date<span class="text-danger">*</span></label>
+                <div class="form-row mb-0">
+                  <div class="col-4">
+                    <div class="form-group mb-2">
+                      <input class="form-control form-control-sm datetimepicker" id="telephonicinterviewdate"
+                        name="date" type="text" data-options='{"dateFormat":"d/m/y"}'>
+                    </div>
+                  </div>
+                </div>
+
+                <label class="mb-1" for="datepicker">Reporting Time<span class="text-danger">*</span></label>
+                <div class="form-row">
+                  <div class="col-4">
+                    <div class="form-group mb-2">
+                      <input class="form-control form-control-sm datetimepicker" id="telephonicreportingtime"
+                        name="time" type="text" data-options='{"enableTime":true,"dateFormat":"d/m/y H:i"}'>
+                    </div>
+                  </div>
+                  <div class="col-3">
+                    <div class="form-group mb-2">
+                      <select class="form-control form-control-sm" name="time_add" id="selectBox2"
+                        onchange="changeFunc2();">
+                        <option value=".">None</option>
+                        <option value="and">and</option>
+                        <option value="to">to</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="col-4">
+                    <input class="form-control form-control-sm datetimepicker" name="time1" id="datepickerselect2"
+                      style="display: none" type="text" data-options='{"dateFormat":"d/m/y"}'>
+                  </div>
+                </div>
+                <div class="form-group mb-2">
+                  <label class="mb-1" for="name">Save this template as </label>
+                  <input class="form-control form-control-sm" id="name" type="text"
+                    placeholder="Enter Template name Here">
+                </div>
+                <hr class="border-dashed border-bottom-0" />
+                <div class="row">
+                  <div class="col"></div>
+                  <div class="col-auto">
+                    <a class="btn border-0 btn-sm text-warning mr-0" type="button">Save as Draft</a>
+                    <button class="btn btn-outline-success btn-sm mr-1" data-toggle="modal"
+                      data-target="#telephonicpreviewmailmodel" id="previewmailmodel"
+                      onclick="previewmaildatatelephonic()" type="button">Preview Mail</button>
+                    <button class="btn btn-primary btn-sm" type="button" onclick="tele()">Send Mail</button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="walkinpreviewmailmodel" tabindex="-1" role="dialog" aria-labelledby="modalLabel"
+      aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+        <div class="modal-content">
+          <div class="modal-header bg-200 p-3">
+            <div class="z-index-1 py-1 flex-grow-1">
+              <label class="mb-0 font-weight-semi-bold" id="settings-modal-label">Interview Call Letter for <span
+                  id="walkincompanyname1"></span></label><br>
+              <label class="mb-0 fs--2">1 Recipient(s)</label>
+            </div>
+            <button class="close z-index-1" type="button" data-dismiss="modal" aria-label="Close"><span
+                class="font-weight-light" aria-hidden="true">&times;</span></button>
+          </div>
+          <div class="modal-body px-card">
+            <h6 class="font-weight-semi-bold">Dear Candidates,</h6>
+            <label>We are happy to inform you that your resume has been shortlisted for following job requirement.For
+              further selection process,you have been invited to attend the interview.</label>
+            <label class="text-warning">Recruitment Summary:</label>
+            <div class="row mt-2">
+              <div class="col-1"></div>
+              <div class="col-8">
+                <table class="table table-bordered fs--1">
+                  <tbody>
+                    <tr class="border-0">
+                      <td class="bg-100 p-2" style="width: 30%;">Company Name</td>
+                      <td class="p-2" style="width: 50%;"><span id="walkincompanyname2"></span></td>
+                    </tr>
+                    <tr>
+                      <td class="bg-100 p-2" style="width: 30%;">Job Position</td>
+                      <td class="p-2"><span id="re_walkinjobpositionname"></span></td>
+                    </tr>
+
+                    <tr>
+                      <td class="bg-100 p-2" style="width: 30%;">Interview Type</td>
+                      <td class="p-2"><span id="re_Walkinraio"></span></td>
+                    </tr>
+                    <tr>
+                      <td class="bg-100 p-2" style="width: 30%;">Interview Date</td>
+                      <td class="p-2"><span id="re_walkincityinterviewdate"></span> to <span
+                          id="re_datepickerselect"></span></td>
+                    </tr>
+                  </tbody>
+                </table>
+                <!-- <div class="text-center">
+                  <button class="btn btn-outline-success btn-sm mr-1 mb-1" type="button">View Job
+                  </button>
+                </div> -->
+
+              </div>
+            </div>
+            <div><label class="text-warning">Interview Venue Details:</label></div>
+            <div>
+              <!-- <label>Download Admit card to know interview venue details.Once you download,you need to accept the admit
+                card to confirm your presence for the interview.</label><br>
+              <div class="text-center my-2">
+                <button class="btn btn-primary btn-sm mr-5 mb-1" type="button">Download Admit Card
+                </button>
+              </div> -->
+              <div class="">
+                <div class="row mt-2">
+                  <div class="col-1"></div>
+                  <div class="col-8">
+                    <table class="table table-bordered fs--1">
+                      <tbody>
+                        <tr class="border-0">
+                          <td class="bg-100 p-2" style="width: 30%;">Venue</td>
+                          <td class="p-2" style="width: 50%;"><span id="re_walkinvenue"></span></td>
+                        </tr>
+
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+                <!-- <label><b>Note:</b> Please confirm your presence by clicking on <b>Accepted </b>option if you are
+                  interested to attend the interview.Only candidate with valid call letter which will be checked on test
+                  day will be eligible to attend test,any candidate without or fake call letter will not be entertained
+                  on venue.</label> -->
+
+                <label>Wish you best of luck!!</label><br>
+                <label>Regards,</label><br>
+                <label></label>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="telephonicpreviewmailmodel" tabindex="-1" role="dialog" aria-labelledby="modalLabel"
+      aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+        <div class="modal-content">
+          <div class="modal-header bg-200 p-3">
+            <div class="z-index-1 py-1 flex-grow-1">
+              <label class="mb-0 font-weight-semi-bold" id="settings-modal-label">Interview Call Letter for <span
+                  id="re_telephoniccompanyname1"></span></label><br>
+              <label class="mb-0 fs--2">1 Recipient(s)</label>
+            </div>
+            <button class="close z-index-1" type="button" data-dismiss="modal" aria-label="Close"><span
+                class="font-weight-light" aria-hidden="true">&times;</span></button>
+          </div>
+          <div class="modal-body px-card">
+            <h6 class="font-weight-semi-bold">Dear Candidates,</h6>
+            <label>We are happy to inform you that your resume has been shortlisted for following job requirement.For
+              further selection process,you have been invited to attend the interview.</label>
+            <label class="text-warning">Recruitment Summary:</label>
+            <div class="row mt-2">
+              <div class="col-1"></div>
+              <div class="col-8">
+                <table class="table table-bordered fs--1">
+                  <tbody>
+                    <tr class="border-0">
+                      <td class="bg-100 p-2" style="width: 30%;">Company Name</td>
+                      <td class="p-2" style="width: 50%;"><span id="re_telephoniccompanyname2"></span></td>
+                    </tr>
+                    <tr>
+                      <td class="bg-100 p-2" style="width: 30%;">Job Position</td>
+                      <td class="p-2"><span id="re_telephonicjobpositionname"></span></td>
+                    </tr>
+                    <tr>
+                      <td class="bg-100 p-2" style="width: 30%;">Interview type</td>
+                      <td class="p-2"><span id="re_TelephonicRadio"></span></td>
+                    </tr>
+                    <tr>
+                      <td class="bg-100 p-2" style="width: 30%;">Interview Location</td>
+                      <td class="p-2"><span id="re_telecityname"></span></td>
+                    </tr>
+                    <tr>
+                      <td class="bg-100 p-2" style="width: 30%;">Interview Date</td>
+                      <td class="p-2"><span id="re_telephonicinterviewdate"></span></td>
+                    </tr>
+                    <tr>
+                      <td class="bg-100 p-2" style="width: 30%;">Reporting Time</td>
+                      <td class="p-2"><span id="re_telephonicreportingtime"></span> </td>
+                    </tr>
+                  </tbody>
+                </table>
+                <div class="text-center">
+                  <button class="btn btn-outline-success btn-sm mr-1 mb-1" type="button">View Job
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div><label class="text-warning">Interview Venue Details:</label></div>
+            <div>
+              <!-- <label>Download Admit card to know interview venue details.Once you download,you need to accept the admit
+                card to confirm your presence for the interview.</label><br>
+              <div class="text-center my-2">
+                <button class="btn btn-primary btn-sm mr-5 mb-1" type="button">Download Admit Card
+                </button>
+              </div> -->
+              <div class="">
+                <div class="row mt-2">
+                  <div class="col-1"></div>
+                  <div class="col-8">
+                    <table class="table table-bordered fs--1">
+                      <tbody>
+                        <tr class="border-0">
+                          <td class="bg-100 p-2" style="width: 30%;">Venue</td>
+                          <td class="p-2" style="width: 50%;"><span id="re_televenue"></span></td>
+                        </tr>
+
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+                <!-- <label><b>Note:</b> Please confirm your presence by clicking on <b>Accepted </b>option if you are
+                  interested to attend the interview.Only candidate with valid call letter which will be checked on test
+                  day will be eligible to attend test,any candidate without or fake call letter will not be entertained
+                  on venue.</label> -->
+                <label>Wish you best of luck!!</label><br>
+                <label>Regards,</label><br>
+                <label></label>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="card-body px-0 pt-0">
+      <div class="row">
+        <div class="col-12">
+          <div class="dashboard-data-table">
+            <div id="DataTables_Table_1_wrapper" class="dataTables_wrapper dt-bootstrap4 no-footer">
+              <div class="row mx-1">
+                <div class="col-sm-12 col-md-6 px-3"></div>
+                <div class="col-sm-12 col-md-6 px-3"></div>
+              </div>
+              <div class="table-responsive">
+                <div class="alert alert-danger" style="display:none; height:50px;" id="alertsave" role="alert">
+                  <p><strong>Warning!!..</strong>Please Select atleast one user to download</p>
+                </div>
+                <div class="alert alert-danger" style="display:none; height:50px;" id="alertsave2" role="alert">
+                  <p><strong>Warning!!..</strong>Please Select atleast one user to send mail</p>
+                </div>
+                <div class="alert alert-success" style="display:none; height:50px;" id="alertsave1" role="alert">
+                  <p><strong>Success!!..</strong>User Successfully downloaded</p>
+                </div>
+                <div class="alert alert-success" style="display:none; height:50px;" id="alertsave3" role="alert">
+                  <p><strong>Success!!..</strong>Mail sent successfully to the user</p>
+                </div>
+                <div class="alert alert-success" style="display:none; height:50px;" id="alertsave4" role="alert">
+                  <p><strong>Success!!..</strong>Student added successfully</p>
+                </div>
+                <table class="table table-sm table-dashboard fs--1 data-table border-bottom dataTable no-footer"
+                  data-options="{&quot;responsive&quot;:false,&quot;pagingType&quot;:&quot;simple&quot;,&quot;lengthChange&quot;:false,&quot;searching&quot;:false,&quot;pageLength:8,&quot;columnDefs&quot;:[{&quot;targets&quot;:[0,6],&quot;orderable&quot;:false}],&quot;language&quot;:{&quot;info&quot;:&quot;_START_ to _END_ Items of _TOTAL_ — <a href=\&quot;#!\&quot; class=\&quot;font-weight-semi-bold\&quot;> view all <span class=\&quot;fas fa-angle-right\&quot; data-fa-transform=\&quot;down-1\&quot;></span> </a>&quot;},&quot;buttons&quot;:[&quot;copy&quot;,&quot;excel&quot;]}"
+                  id="DataTables_Table_1" role="grid" aria-describedby="DataTables_Table_1_info">
+                  <thead class="bg-200 text-900">
+                    <tr role="row">
+                      <th class="no-sort pr-1 align-middle data-table-row-bulk-select sorting_disabled" rowspan="1"
+                        colspan="1" aria-label="" style="width: 28px;">
+                        <div class="custom-control custom-checkbox">
+                          <input class="custom-control-input checkbox-bulk-select" name="multicheck"
+                            id="checkbox-bulk-purchases-select" type="checkbox" data-checkbox-body="#purchases"
+                            data-checkbox-actions="#purchases-actions"
+                            data-checkbox-replaced-element="#dashboard-actions" indeterminate="false">
+                          <label class="custom-control-label" for="checkbox-bulk-purchases-select"></label>
+                        </div>
+                      </th>
+                      <th class="sort pr-1 align-middle sorting_asc" tabindex="0" aria-controls="DataTables_Table_1"
+                        rowspan="1" colspan="1" aria-label="Customer: activate to sort column descending"
+                        style="width: 129.203px;" aria-sort="ascending">Name</th>
+                      <th class="sort pr-1 align-middle sorting" tabindex="0" aria-controls="DataTables_Table_1"
+                        rowspan="1" colspan="1" aria-label="ProfeesionID: activate to sort column ascending"
+                        style="width: 140.203px;">Profession ID</th>
+                      <th class="sort pr-1 align-middle sorting" tabindex="0" aria-controls="DataTables_Table_1"
+                        rowspan="1" colspan="1" aria-label="Branch: activate to sort column ascending"
+                        style="width: 140.203px;">Branch</th>
+                      <th class="sort pr-1 align-middle sorting" tabindex="0" aria-controls="DataTables_Table_1"
+                        rowspan="1" colspan="1" aria-label="Department: activate to sort column ascending"
+                        style="width: 140.203px;">Department</th>
+                      <th class="sort pr-1 align-middle sorting" tabindex="0" aria-controls="DataTables_Table_1"
+                        rowspan="1" colspan="1" aria-label="Email: activate to sort column ascending"
+                        style="width: 140.203px;">Email</th>
+                      <th class="sort pr-1 align-middle sorting" tabindex="0" aria-controls="DataTables_Table_1"
+                        rowspan="1" colspan="1" aria-label="MobileNumber: activate to sort column ascending"
+                        style="width: 279.203px;">Mobile </th>
+                      <th class="sort pr-1 align-middle sorting" tabindex="0" aria-controls="DataTables_Table_1"
+                        rowspan="1" colspan="1" aria-label="MobileNumber: activate to sort column ascending"
+                        style="width: 279.203px;">College Name</th>
+                      <th class="sort pr-1 align-middle text-center sorting" tabindex="0"
+                        aria-controls="DataTables_Table_1" rowspan="1" colspan="1"
+                        aria-label="Marks: activate to sort column ascending" style="width: 81.2031px;">Marks</th>
+                      <th class="sort pr-1 align-middle text-right sorting" tabindex="0"
+                        aria-controls="DataTables_Table_1" rowspan="1" colspan="1"
+                        aria-label="YearofPassout: activate to sort column ascending" style="width: 71.2031px;">Year of
+                        Passout</th>
+                      <th class="sort pr-1 align-middle sorting" tabindex="0" aria-controls="DataTables_Table_1"
+                        rowspan="1" colspan="1" aria-label="ArrearCount: activate to sort column ascending"
+                        style="width: 140.203px;">Arrear Count</th>
+                      <th class="sort pr-1 align-middle sorting" tabindex="0" aria-controls="DataTables_Table_1"
+                        rowspan="1" colspan="1" aria-label="Gender: activate to sort column ascending"
+                        style="width: 140.203px;">Gender</th>
+                      <th class="no-sort pr-1 align-middle data-table-row-action sorting_disabled" rowspan="1"
+                        colspan="1" aria-label="" style="width: 56.2031px;"></th>
+
+                  </thead>
+                  <input type="hidden" id="nooflisting" value="">
+                  <tbody id="purchases">
+                     {% for data in datas %}
+                    <tr class="btn-reveal-trigger odd" role="row">
+                      <td class="align-middle" id="tooltip">
+                        <div class="custom-control custom-checkbox">
+                          <input class="custom-control-input checkbox-bulk-select-target" type="checkbox"
+                            name="profilecheck" id="checkbox-2{{ forloop.counter }}" value="{{ i.emailid }}">
+                          <label class="custom-control-label" for="checkbox-2{{ forloop.counter }}"></label>
+                        </div>
+                        <td class="align-middle">{{data.firstname}}</td>
+                      </td>
+                      <th class="align-middle sorting_1"><a href="../pages/customer-details.html">
+                          <div class="media d-flex align-items-center">
+                            <div class="avatar avatar-xl mr-2">
+                              {# <div class="avatar-name rounded-circle"><span></span></div> #}
+                            </div>
+                            <div class="media-body">
+                              <h5 class="mb-0 fs--1"></h5>
+                            </div>
+                          </div>
+                        </a></th>
+                       
+                      <td class="align-middle">{{data.lastname}}</td>
+                      <td class="align-middle">{{data.qualification}}</td>
+                      <td class="align-middle">{{data.emailid}}</td>
+                      <td class="align-middle">{{data.mobilenumber}}</td>
+                      <td class="align-middle">{{data.college_name}}</td>
+                     
+                      <td class="align-middle">{{data.sslc_marks}}</td>
+                      <td class="align-middle">{{data.yearpassedout}}</td>
+                      <td class="align-middle">{{data.arrears_count}}</td>
+                      <td class="align-middle text-center">{{data.gender}}</td>
+                      <td class="align-middle text-center">
+                        <div class="avatar avatar-xl mr-3" style="height: 20px; width: 20px;">
+                          <div class="avatar-name rounded-circle bg-soft-primary text-dark"><span class="text-primary"
+                              style="font-size: 13px;"></span></div>
+                        </div>
+                      </td>
+                      <td class="align-middle"></td>
+                      <td class="align-middle ml-0">
+                        <div class="dropdown text-sans-serif">
+                          <button class="btn btn-link text-600 btn-sm dropdown-toggle btn-reveal" type="button"
+                            id="dropdown0" data-toggle="dropdown" data-boundary="html" aria-haspopup="true"
+                            aria-expanded="false"><span class="fas fa-ellipsis-h fs--1"></span></button>
+                          <div class="dropdown-menu dropdown-menu-right border py-0" aria-labelledby="dropdown0">
+                            <div class="bg-white py-2"><a class="dropdown-item " id="mymodal" data-toggle="modal" data-target="#editstudent"
+                                data-url="">Edit</a>
+                              <div class="dropdown-divider"></div><a class="dropdown-item text-danger" href=""
+                                id="view">Delete</a>
+                            </div>
+                          </div>
+                        </div>
+                      </td>
+                    </tr>
+                    {% endfor %}
+                  
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+
+    <footer>
+      <!-- <div class="row no-gutters justify-content-between fs--1 mt-4 mb-3">
+        <div class="col-12 col-sm-auto text-center">
+          <p class="mb-0 text-600">Thank you for creating with Falcon <span class="d-none d-sm-inline-block">|
+            </span><br class="d-sm-none"> 2019 © <a href="https://themewagon.com">Themewagon</a></p>
+        </div>
+        <div class="col-12 col-sm-auto text-center">
+          <p class="mb-0 text-600">v2.7.3</p>
+        </div>
+      </div> -->
+    </footer>
+    </div>
+    </div>
+  </main>
+  <!-- ===============================================-->
+  <!--    End of Main Content-->
+  <!-- ===============================================-->
+
+
+
+
+  <!-- ===============================================-->
+  <!--    JavaScripts-->
+  <!-- ===============================================-->
+  <script src={% static "assets/lib/progressbar.js/progressbar.min.js" %}></script>
+  <script src={% static "assets/js/jquery.min.js" %}></script>
+  <script src={% static "assets/js/popper.min.js" %}></script>
+  <script src={% static "assets/js/bootstrap.min.js" %}></script>
+  <script src={% static "assets/lib/@fortawesome/all.min.js" %}></script>
+  <script src={% static "assets/lib/stickyfilljs/stickyfill.min.js" %}></script>
+  <script src={% static "assets/lib/sticky-kit/sticky-kit.min.js" %}></script>
+  <script src={% static "assets/lib/is_js/is.min.js" %}></script>
+  <script src={% static "assets/lib/lodash/lodash.min.js" %}></script>
+  <script src={% static "assets/lib/perfect-scrollbar/perfect-scrollbar.js" %}></script>
+  <link
+    href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,500,600,700%7cPoppins:100,200,300,400,500,600,700,800,900&amp;display=swap"
+    rel="stylesheet">
+  <script src={% static "ssets/lib/prismjs/prism.js" %}></script>
+  <script src={% static "assets/lib/echarts/echarts.min.js" %}></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.6.15/browser-polyfill.min.js"></script>
+  <script src={% static "assets/lib/progressbar.js/progressbar.min.js" %}></script>
+  <script src={% static "assets/js/theme.js" %}></script>
+  <script src={% static "assets/lib/dropzone/dropzone.min.js" %}></script>
+  <script src={% static "assets/lib/flatpickr/flatpickr.min.js" %}></script>
+  <script src={% static "assets/lib/select2/select2.min.js" %}></script>
+  <script src={% static "assets/js/fSelect.js" %}></script>
+  <script src={% static "assets/lib/datatables/js/jquery.dataTables.min.js" %}></script>
+  <script src={% static "assets/lib/datatables-bs4/dataTables.bootstrap4.min.js" %}></script>
+  <script src={% static "assets/lib/datatables.net-responsive/dataTables.responsive.js" %}></script>
+  <script src={% static "assets/lib/datatables.net-responsive-bs4/responsive.bootstrap4.js" %}></script>
+  <script src={% static "assets/lib/tinymce/tinymce.min.js" %}></script>
+  <script>
+    $("#clear_all").click(function () {
+      console.log("Inside Clear Filter")
+      $("#stu_filter")[0].reset();
+      $('#stu_filter').submit();
+    });
+  </script>
+
+  <script>
+
+
+    $("#mymodal").click(function(){
+      console.log("Inside Edit Student Function")
+      var a=$(this).attr("data-url");
+      console.log(a)
+      $.ajax({
+        url: $(this).attr("data-url"),
+        type: "GET",
+        
+        success: function (data) {
+
+          $("#editStudent").modal('show');
+          $("#alertsave4").show();
+        }
+      });
+    });
+  </script>
+  <script>
+    function yop_count() {
+      var valueSelected = $("#yop").val();
+      
+      console.log("Value is"+valueSelected);
+      
+      $('#form1').submit();
+      $('#yop').val(valueSelected);
+    }
+    function dept_count() {
+      $('#form2').submit();
+    }
+  </script>
+  <script>
+    //js for send mail model interview type selection	
+    $(document).ready(function () {
+      $("#TelephonicRadio").click(function () {
+        $("#walkininterview").hide();
+        $("#telephonicinterview").show();
+      });
+      $("#Walkinraio").click(function () {
+        $("#telephonicinterview").hide();
+        $("#walkininterview").show();
+      });
+    });
+
+
+
+
+    //js for datepicker in walkin- interview date
+
+    function changeFunc() {
+      var selectBox = document.getElementById("selectBox");
+      var selectedValue = selectBox.options[selectBox.selectedIndex].value;
+      if (selectedValue == ".") {
+        $('#datepickerselect').hide();
+      }
+      else if (selectedValue == "and") {
+        $('#datepickerselect').show();
+      }
+      else if (selectedValue == "to") {
+        $('#datepickerselect').show();
+      }
+    }
+
+    //js for datepicker in walkin- Reporting Time
+
+    function changeFunc1() {
+      var selectBox = document.getElementById("selectBox1");
+      var selectedValue = selectBox.options[selectBox.selectedIndex].value;
+      if (selectedValue == ".") {
+        $('#datepickerselect1').hide();
+      }
+      else if (selectedValue == "and") {
+        $('#datepickerselect1').show();
+      }
+      else if (selectedValue == "to") {
+        $('#datepickerselect1').show();
+      }
+    }
+
+
+
+    //js for datepicker in telephonic interview
+
+
+    function changeFunc2() {
+      var selectBox = document.getElementById("selectBox2");
+      var selectedValue = selectBox.options[selectBox.selectedIndex].value;
+      if (selectedValue == ".") {
+        $('#datepickerselect2').hide();
+      }
+      else if (selectedValue == "and") {
+        $('#datepickerselect2').show();
+      }
+      else if (selectedValue == "to") {
+        $('#datepickerselect2').show();
+      }
+    }
+
+
+
+
+
+
+
+    //js for previewmail walkin
+
+    function previewmaildata() {
+      var interviewtype = document.getElementById('Walkinraio').value;
+      document.getElementById("re_Walkinraio").innerHTML = interviewtype;
+
+
+      var walkcompany = document.getElementById('walkcompanyname').value;
+      document.getElementById("walkincompanyname1").innerHTML = walkcompany;
+      document.getElementById("walkincompanyname2").innerHTML = walkcompany;
+
+      var walkjobposition = document.getElementById('walkinjobpositionname').value;
+      document.getElementById("re_walkinjobpositionname").innerHTML = walkjobposition;
+
+
+
+      var ve = document.getElementById('venue1').value;
+      document.getElementById("re_walkinvenue").innerHTML = ve;
+
+      var walkincityinterview = document.getElementById('walkincityinterviewdate').value;
+      document.getElementById("re_walkincityinterviewdate").innerHTML = walkincityinterview;
+
+
+      var datepickerselect = document.getElementById('datepickerselect').value;
+      document.getElementById("re_datepickerselect").innerHTML = datepickerselect;
+
+    }
+
+    //js for telephonic previewmail
+
+
+    function previewmaildatatelephonic() {
+      var interviewtype = document.getElementById('TelephonicRadio').value;
+      document.getElementById("re_TelephonicRadio").innerHTML = interviewtype;
+
+      var telephonicjobposition = document.getElementById('telephoniccompanyname').value;
+      document.getElementById("re_telephoniccompanyname1").innerHTML = telephonicjobposition;
+      document.getElementById("re_telephoniccompanyname2").innerHTML = telephonicjobposition;
+
+      var telephonicjobposition = document.getElementById('telephonicjobpositionname').value;
+      document.getElementById("re_telephonicjobpositionname").innerHTML = telephonicjobposition;
+      var ve1 = document.getElementById('venue2').value;
+      document.getElementById("re_televenue").innerHTML = ve1;
+
+      var telecity = document.getElementById('telecityname').value;
+      document.getElementById("re_telecityname").innerHTML = telecity;
+
+      var telephonicinterview = document.getElementById('telephonicinterviewdate').value;
+      document.getElementById("re_telephonicinterviewdate").innerHTML = telephonicinterview;
+
+      var telephonicreporting = document.getElementById('telephonicreportingtime').value;
+      document.getElementById("re_telephonicreportingtime").innerHTML = telephonicreporting;
+
+    }
+
+
+  </script>
+
+ 
+
+
+  <script>
+    $("#mailsend").click(function () {
+      console.log("INside Download click");
+      if ($("input[name='profilecheck']").prop('checked') == true) {
+        $("#mailcheck").modal('hide');
+        $("#sendmail").modal('show');
+       
+
+        console.log("INside If condition");
+      }else{
+        $("#alertsave2").show();
+        window.setTimeout(function () {
+          $("#alertsave2").hide();
+        }, 3000);
+        console.log("outside if condition");
+      }
+    }
+    );
+  </script>
+  <script>
+
+    $("#mailsend").click(function () {
+      console.log("INside Download click");
+      if ($("input[name='multicheck']").prop('checked') == true) {
+        $("#sendmail").modal('show');
+
+        console.log("INside If condition");
+      }
+    }
+    );
+  </script>
+
+
+
+
+  <!-- Email Getting Start -->
+  <script>
+    var arr = [];
+    var arr1 = [];
+    var i = 0;
+    var j = 0;
+    var numberofcount = $('#nooflisting').val();
+    var k = 1;
+
+    var flag = 1;
+
+    console.log("Inside Jobseeker Selection in Institution Dashboard");
+    $('input[name="profilecheck"]').change(function () {
+      console.log("Inside Profile Check Change Function");
+      if ($(this).prop('checked') && (k <= numberofcount)) {
+        console.log("Checkbox value " + this.value);
+        console.log("Inside Email Getting Selection");
+
+        var email = $("#email" + k).val();
+        console.log("Candidate Email value " + email);
+        arr[i] = this.value;
+        arr1[i] = email;
+        console.log("Checkbox value 2 " + arr[i]);
+        console.log("Candidate Email value 2 " + arr1[i]);
+        $('#email_selected_oncampus').val(arr);
+        $('#email_selected_offcampus').val(arr);
+
+
+        i++;
+        k++;
+        if (k > numberofcount)
+          k = 1;
+        flag++;
+      }
+
+    });
+    j++;
+
+
+  </script>
+  <!-- Email Getting End -->
+  <!-- 	Send mail Section Start -->
+  <script type="text/javascript">
+    function walkin() {
+      $.ajax({
+        url: "{% url 'homepage' %}",
+        type: "POST",
+        data: $("#oncampus").serialize(),
+
+        success: function (response) {
+          $("#sendmail").modal('hide');
+          $("#alertsave3").show();
+          window.setTimeout(function () {
+            $("#alertsave3").hide();
+          }, 3000);
+
+        }
+      });
+    }
+  </script>
+  <script type="text/javascript">
+    function tele() {
+      $.ajax({
+        url: "{% url 'homepage' %}",
+        type: "POST",
+        data: $("#offcampus").serialize(),
+        success: function (response) {
+          $("#sendmail").modal('hide');
+          $("#alertsave3").show();
+          window.setTimeout(function () {
+            $("#alertsave3").hide();
+          }, 3000);
+
+        }
+      });
+    }
+  </script>
+  <script type="text/javascript">
+    function add_stu() {
+      $.ajax({
+        url: "{% url 'homepage' %}",
+        type: "POST",
+        data: $("#add_form").serialize(),
+        success: function (response) {
+          $("#addstudent").modal('hide');
+          window.location.reload();
+      
+        }
+      });
+    }
+  </script>
+
+  
+
+</body>
+
+</html>
