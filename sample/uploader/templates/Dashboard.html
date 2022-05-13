@@ -1,30 +1,30 @@
-
 <html lang="en-US" dir="ltr" class="fontawesome-i2svg-active fontawesome-i2svg-complete chrome windows">
 {% load static %}
 <head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="keyword" content="">
-  <meta name="description" content="">
-  {% if messages %}
-  <ul class="messages">
-      {% for message in messages %}
-      <li{% if message.tags %} class="{{ message.tags }}"{% endif %}>{{ message }}</li>
-      {% endfor %}
-  </ul>
-  {% endif %}
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keyword" content="">
+    <meta name="description" content="">
+    {% if messages %}
+    <ul class="messages">
+        {% for message in messages %}
+        <li
+        {% if message.tags %} class="{{ message.tags }}"{% endif %}>{{ message }}</li>
+        {% endfor %}
+    </ul>
+    {% endif %}
 
-  <!-- ===============================================-->
-  <!--    Document Title-->
-  <!-- ===============================================-->
-  <title>Dashboard</title>
+    <!-- ===============================================-->
+    <!--    Document Title-->
+    <!-- ===============================================-->
+    <title>Dashboard</title>
 
 
-  <!-- ===============================================-->
-  <!--    Favicons-->
-  <!-- ===============================================-->
-  <style type="text/css">
+    <!-- ===============================================-->
+    <!--    Favicons-->
+    <!-- ===============================================-->
+    <style type="text/css">
     svg:not(:root).svg-inline--fa {
       overflow: visible
     }
@@ -523,20 +523,28 @@
   
     
     
-  </style>
-  <link rel="apple-touch-icon" sizes="180x180" href= "{% static "assets/img/favicons/apple-touch-icon.png" %}">
-  <link rel="icon" type="image/png" sizes="32x32" href={% static "assets/img/favicons/favicon-32x32.png" %}>
-  <link rel="icon" type="image/png" sizes="16x16" href={% static "assets/img/favicons/favicon-16x16.png" %}>
-  <link rel="shortcut icon" type="image/x-icon" href={% static "assets/img/favicons/favicon.ico" %}>
-  <link rel="manifest" href={% static "assets/img/favicons/manifest.json" %}>
-  <meta name="msapplication-TileImage" content= {% static "assets/img/favicons/mstile-150x150.png" %}>
-  <meta name="theme-color" content="#ffffff">
+
+    </style>
+    <link rel="apple-touch-icon" sizes="180x180" href="{% static " assets
+    /img/favicons/apple-touch-icon.png" %}">
+    <link rel="icon" type="image/png" sizes="32x32" href={% static
+    "assets/img/favicons/favicon-32x32.png" %}>
+    <link rel="icon" type="image/png" sizes="16x16" href={% static
+    "assets/img/favicons/favicon-16x16.png" %}>
+    <link rel="shortcut icon" type="image/x-icon" href={% static
+    "assets/img/favicons/favicon.ico" %}>
+    <link rel="manifest" href={% static
+    "assets/img/favicons/manifest.json" %}>
+    <meta name="msapplication-TileImage" content={% static
+    "assets/img/favicons/mstile-150x150.png" %}>
+    <meta name="theme-color" content="#ffffff">
 
 
-  <!-- ===============================================-->
-  <!--    Stylesheets-->
-  <!-- ===============================================-->
-  <script src={% static "assets/js/config.navbar-vertical.js" %}></script>
+    <!-- ===============================================-->
+    <!--    Stylesheets-->
+    <!-- ===============================================-->
+    <script src={% static
+    "assets/js/config.navbar-vertical.js" %}></script>
   <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
   <link href={% static "assets/lib/perfect-scrollbar/perfect-scrollbar.css" %} rel="stylesheet">
   <link href={% static "assets/lib/prismjs/prism-okaidia.css" %} rel="stylesheet">
@@ -1692,32 +1700,44 @@
   <!--    JavaScripts-->
   <!-- ===============================================-->
   <script src={% static "assets/lib/progressbar.js/progressbar.min.js" %}></script>
-  <script src={% static "assets/js/jquery.min.js" %}></script>
+    <script src={% static
+    "assets/js/jquery.min.js" %}></script>
   <script src={% static "assets/js/popper.min.js" %}></script>
-  <script src={% static "assets/js/bootstrap.min.js" %}></script>
+    <script src={% static
+    "assets/js/bootstrap.min.js" %}></script>
   <script src={% static "assets/lib/@fortawesome/all.min.js" %}></script>
-  <script src={% static "assets/lib/stickyfilljs/stickyfill.min.js" %}></script>
+    <script src={% static
+    "assets/lib/stickyfilljs/stickyfill.min.js" %}></script>
   <script src={% static "assets/lib/sticky-kit/sticky-kit.min.js" %}></script>
-  <script src={% static "assets/lib/is_js/is.min.js" %}></script>
+    <script src={% static
+    "assets/lib/is_js/is.min.js" %}></script>
   <script src={% static "assets/lib/lodash/lodash.min.js" %}></script>
-  <script src={% static "assets/lib/perfect-scrollbar/perfect-scrollbar.js" %}></script>
+    <script src={% static
+    "assets/lib/perfect-scrollbar/perfect-scrollbar.js" %}></script>
   <link
     href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,500,600,700%7cPoppins:100,200,300,400,500,600,700,800,900&amp;display=swap"
     rel="stylesheet">
   <script src={% static "ssets/lib/prismjs/prism.js" %}></script>
-  <script src={% static "assets/lib/echarts/echarts.min.js" %}></script>
+    <script src={% static
+    "assets/lib/echarts/echarts.min.js" %}></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.6.15/browser-polyfill.min.js"></script>
-  <script src={% static "assets/lib/progressbar.js/progressbar.min.js" %}></script>
+    <script src={% static
+    "assets/lib/progressbar.js/progressbar.min.js" %}></script>
   <script src={% static "assets/js/theme.js" %}></script>
-  <script src={% static "assets/lib/dropzone/dropzone.min.js" %}></script>
+    <script src={% static
+    "assets/lib/dropzone/dropzone.min.js" %}></script>
   <script src={% static "assets/lib/flatpickr/flatpickr.min.js" %}></script>
-  <script src={% static "assets/lib/select2/select2.min.js" %}></script>
+    <script src={% static
+    "assets/lib/select2/select2.min.js" %}></script>
   <script src={% static "assets/js/fSelect.js" %}></script>
-  <script src={% static "assets/lib/datatables/js/jquery.dataTables.min.js" %}></script>
+    <script src={% static
+    "assets/lib/datatables/js/jquery.dataTables.min.js" %}></script>
   <script src={% static "assets/lib/datatables-bs4/dataTables.bootstrap4.min.js" %}></script>
-  <script src={% static "assets/lib/datatables.net-responsive/dataTables.responsive.js" %}></script>
+    <script src={% static
+    "assets/lib/datatables.net-responsive/dataTables.responsive.js" %}></script>
   <script src={% static "assets/lib/datatables.net-responsive-bs4/responsive.bootstrap4.js" %}></script>
-  <script src={% static "assets/lib/tinymce/tinymce.min.js" %}></script>
+    <script src={% static
+    "assets/lib/tinymce/tinymce.min.js" %}></script>
   <script>
     $("#clear_all").click(function () {
       console.log("Inside Clear Filter")
@@ -1726,7 +1746,7 @@
     });
   </script>
 
-  <script>
+    <script>
 
 
     $("#mymodal").click(function(){
@@ -1744,8 +1764,9 @@
         }
       });
     });
-  </script>
-  <script>
+
+    </script>
+    <script>
     function yop_count() {
       var valueSelected = $("#yop").val();
       
@@ -1757,8 +1778,9 @@
     function dept_count() {
       $('#form2').submit();
     }
-  </script>
-  <script>
+
+    </script>
+    <script>
     //js for send mail model interview type selection	
     $(document).ready(function () {
       $("#TelephonicRadio").click(function () {
@@ -1887,12 +1909,11 @@
     }
 
 
-  </script>
 
- 
+    </script>
 
 
-  <script>
+    <script>
     $("#mailsend").click(function () {
       console.log("INside Download click");
       if ($("input[name='profilecheck']").prop('checked') == true) {
@@ -1910,8 +1931,9 @@
       }
     }
     );
-  </script>
-  <script>
+
+    </script>
+    <script>
 
     $("#mailsend").click(function () {
       console.log("INside Download click");
@@ -1922,13 +1944,12 @@
       }
     }
     );
-  </script>
+
+    </script>
 
 
-
-
-  <!-- Email Getting Start -->
-  <script>
+    <!-- Email Getting Start -->
+    <script>
     var arr = [];
     var arr1 = [];
     var i = 0;
@@ -1966,10 +1987,11 @@
     j++;
 
 
-  </script>
-  <!-- Email Getting End -->
-  <!-- 	Send mail Section Start -->
-  <script type="text/javascript">
+
+    </script>
+    <!-- Email Getting End -->
+    <!-- 	Send mail Section Start -->
+    <script type="text/javascript">
     function walkin() {
       $.ajax({
         url: "{% url 'homepage' %}",
@@ -1986,8 +2008,9 @@
         }
       });
     }
-  </script>
-  <script type="text/javascript">
+
+    </script>
+    <script type="text/javascript">
     function tele() {
       $.ajax({
         url: "{% url 'homepage' %}",
@@ -2003,8 +2026,9 @@
         }
       });
     }
-  </script>
-  <script type="text/javascript">
+
+    </script>
+    <script type="text/javascript">
     function add_stu() {
       $.ajax({
         url: "{% url 'homepage' %}",
@@ -2017,10 +2041,10 @@
         }
       });
     }
-  </script>
 
-  
+    </script>
 
-</body>
+
+    </body>
 
 </html>

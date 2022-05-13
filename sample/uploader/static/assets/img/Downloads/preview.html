@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en-US" dir="ltr">
 
-  <head>
+<head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -30,13 +30,9 @@
     <!-- ===============================================-->
 
 
-
-
-
-
     <link href="assets/css/theme.css" rel="stylesheet">
-<link href="assets/lib/flatpickr/flatpickr.min.css" rel="stylesheet">
-  <link href="assets/css/fSelect.css" rel="stylesheet">
+    <link href="assets/lib/flatpickr/flatpickr.min.css" rel="stylesheet">
+    <link href="assets/css/fSelect.css" rel="stylesheet">
     <style type="text/css">
     	.fs-dropdown {
 	
@@ -47,280 +43,326 @@
     max-height: 185px;
     overflow: auto;
 }
+
+
     </style>
-   
-  </head>
+
+</head>
 
 
-  <body>
+<body>
 
-    <!-- ===============================================-->
-    <!--    Main Content-->
-    <!-- ===============================================-->
-    <main class="main" id="top">
-      <div class="container" data-layout="container">
+<!-- ===============================================-->
+<!--    Main Content-->
+<!-- ===============================================-->
+<main class="main" id="top">
+    <div class="container" data-layout="container">
         <div class="content">
-         <div class="card mb-3">
-         <div class="card-header">
-           <div class="row overflow-hidden">
-           <div class="col-8 mt-5 pl-4">
-           <h4 class="text-success mb-2">Preview Your Job</h4>
-              <p class="mb-0 text-justify">Insights from our active community will match your job post to people with similar skills, <br class="d-none d-md-block">experience, and goals — so you can find the right person for your job.</p>
-           </div>
-           <div class="col-4">
-           <img src="assets/img/Downloads/Introducing-3.png" width="200">
-           </div>
-           </div>
-             <nav aria-label="breadcrumb">
-              <ol class="breadcrumb ml-3">
-                <li class="breadcrumb-item"><a href="Recruitment.html">Home</a></li>
-                <li class="breadcrumb-item active" aria-current="page">Preview Your Job</li>
-              </ol>
-            </nav>
-         </div>
-        
-         <div class="card-body bg-light">
-         <div class="row justify-content-center no-gutters">
-                    <div class="col-lg-7 col-xxl-6 pb-3">
-                  
-                  <div class="card overflow-hidden">
-                  <div class="card-body  px-4">
-                  <div class="row ">
-                   <div class="col-lg-12 col-xxl-6 my-4">
-                                  <form class="form-validation" method="get" action="/jobseek.html" data-options='{"rules":{"confirmPassword":{"equalTo":"#wizard-password"}},"messages":{"confirmPassword":{"equalTo":"Passwords didn&#39;t match"},"terms":{"required":"You must accept terms and privacy policy"}}}'>
-                                    <div class="form-group">
-                                    
-                                      <input class="form-control" type="text" id="res-title" name="restitle" placeholder="Job Title"  />
-                                    </div>
-                                    <div class="form-group">
-                                      <input class="form-control" type="text" name="JobType" id="res-JobType" placeholder="Job Type" />
-                                    </div>
-                                    <div class="form-group">
-                                      <input class="form-control" type="text" name="Qualification" id="res-Qualification" placeholder="Qualification" />
-                                    </div>
-                                    <div class="form-group">
-                                      <input class="form-control" type="text" name="JobLocation" id="res-JobLocation" placeholder="Job Location"  />
-                                    </div>
-                                    <div class="form-row">
-                                      <div class="col-6">
-                                        <div class="form-gorup">
-                                          <input class="form-control" type="text" name="MonthlySalary" id="res-MonthlySalarymin" placeholder="Monthly Salary (Min)"   />
-                                        </div>
-                                      </div>
-                                      <div class="col-6">
-                                        <div class="form-group">
-                                          <input class="form-control" type="text" name="MonthlySalary"  id="res-MonthlySalarymax" placeholder="Monthly Salary (Max)"  />
-                                        </div>
-                                      </div>
-                                    </div>
-                                    <div class="form-group">
-                                      <label class="fs-0" for="wizard-name">Salary Visible to applicants</label><br>
-                                      <div class="custom-control custom-radio custom-control-inline ml-1 mr-7">
-                                        <input class="custom-control-input" id="rescustomRadioInline1" type="radio" name="customRadioInline1">
-                                        <label class="custom-control-label" for="customRadioInline1">Yes</label>
-                                      </div>
-                                      <div class="custom-control custom-radio custom-control-inline">
-                                        <input class="custom-control-input" id="customRadioInline2" type="radio" name="customRadioInline1">
-                                        <label class="custom-control-label" for="customRadioInline2">No</label>
-                                      </div>
-                                    </div>
-                                    <div class="form-group">
-                                      <select class="form-control custom-select" id="res-HiringProcess" name="res-HiringProcess">
-                                        <option value="">Select your Hiring Process ...</option>
-                                        <option value="any">Group Discussion</option>
-                                        <option value="above60">Fact to Face</option>
-                                        <option value="above65">Technical</option>
-                                        <option value="above70">Written Test</option>
-                                        <option value="above75">Walk-In</option>
-                                        <option value="above80">Telephonic</option>
-                                        <option value="above80">Online Test</option>
-                                      </select>
-                                    </div>
-                                    <div class="form-row">
-                                      <div class="col-6">
-                                        <div class="form-gorup">
-                                          <label class="fs-0" for="wizard-name">Year of Passing</label>
-                                          <input class="form-control datetimepicker" id="reswizard-datepicker1" placeholder="Hiring Process"  type="text" data-options='{"dateFormat":"d/m/yy"}' />
-                                        </div>
-                                      </div>
-                                      <div class="col-6">
-                                        <div class="form-group" style="margin-top:32px;">
-                                          <input class="form-control datetimepicker " id="reswizard-datepicker2" type="text" data-options='{"dateFormat":"d/m/yy"}' /> 
-                                        </div>
-                                      </div>
-                                    </div>
-                                    <div class="form-group">
-                                      <label class="fs-0" for="wizard-phone">Academic Marks</label>
-                                      <select class="form-control custom-select" id="res-AcademicMarks" name="AcademicMarks">
-                                        <option value="">Select your Marks ...</option>
-                                        <option value="any">Any</option>
-                                        <option value="above60">10th/12th/Degree - All Above 60%</option>
-                                        <option value="above65">10th/12th/Degree - Between 65% to 70%</option>
-                                        <option value="above70">10th/12th/Degree - Between 70% to 75%</option>
-                                        <option value="above75">10th/12th/Degree - Between 75% to 80%</option>
-                                        <option value="above80">Above 80%</option>
-                                      </select>
-                                    </div>
-                                    <div class="form-group">
-                                      <label class="fs-0" for="wizard-datepicker">Maximum No of Arrears</label>
-                                      <select class="form-control custom-select" id="res-Arrears" name="Arrears">
-                                        <option value="">Select your Arrears ...</option>
-                                        <option value="any">Any</option>
-                                        <option value="one">1</option>
-                                        <option value="two">2</option>
-                                        <option value="three">3</option>
-                                        <option value="four">4</option>
-                                        <option value="five">5</option>
-                                      </select>
-                                    </div>
-                                   <div class="form-group">
-                                   <label class="fs-0">Skills</label>
-                                   <div class="form-row ml-0">
-                                      <select class="test" multiple="multiple" id="res-skills">
-                                       <option value="Communication">Communication</option>
-                                       <option value="Teamwork">Teamwork</option>
-                                         <option value="Problemsolving">Problem solving</option>
-                                           <option value="Initiative">Initiative and enterprise</option>
-                                           <option value="Self-management">Self-management</option>
-                                             <option value="Learning">Learning</option>
-                                               <option value="Technology">Technology</option>
-                                           <option value="TimeManagement">Time Management</option>
-                                               <option value="Leadership">Leadership</option>
-                                              <option value="CriticalThinking">Critical Thinking</option>
-                                              <option value="Adaptability">Adaptability</option>
-                                             <option value="Responsibility">Responsibilityg</option>
-                                                 <option value="Creativity">Creativity</option>
-                                     </select>
-                                     </div>
-                                   </div>
-                                   <div class="form-row">
-                                      <div class="col-6">
-                                        <div class="form-gorup">
-                                          <label class="fs-0" for="wizard-name">Experience</label>
-                                          <input class="form-control datetimepicker" id="reswizard-datepicker3" placeholder="Hiring Process"  type="text" data-options='{"dateFormat":"d/m/yy"}' />
-                                        </div>
-                                      </div>
-                                      <div class="col-6">
-                                        <div class="form-group" style="margin-top:32px;">
-                                          <input class="form-control datetimepicker " id="reswizard-datepicker4" type="text" data-options='{"dateFormat":"d/m/yy"}' /> 
-                                        </div>
-                                      </div>
-                                    </div>
-                                    
-                                   <div class="form-group"> 
-                                     <select class="form-control custom-select" id="res-yourgender" name="res-gender">
-                                       <option value="">Select your Gender ...</option>
-                                       <option value="Male">Male</option>
-                                       <option value="Female">Female</option>
-                                       <option value="Other">Other</option>
-                                     </select>
-                                    </div>
-                                     <div class="form-group">
-                                      <input class="form-control" type="email" name="email" placeholder="OFFICIAL EMAIL ID"  id="res-OFFICIALEMAIL" />
-                                    </div>
-                                    <div class="form-group">
-                                      <input class="form-control" type="password" name="password" placeholder="CHOOSE YOUR OWN PASSWORD" id="res-OWNPASSWORD" />
-                                    </div>
-                                    <div class="form-group">
-                                       <select class="form-control custom-select" id="res-company" name="res-company">
-                                       <option value="">Select your company...</option>
-                                       <option value="TechMahindra">Tech Mahindra</option>
-                                       <option value="ElicoHealthcare">Elico Healthcare</option>
-                                       <option value="Infosi">Infosi</option>
-                                       <option value="TCS">TCS</option>
-                                       <option value="Amazon">Amazon</option>
-                                       </select>
-                                    </div>
-                                    <div class="form-group">
-                                       <select class="form-control custom-select" id="res-Industry" name="res-Industry">
-                                       <option value="">Select your Industry...</option>
-                                       <option value="Education">Education,Teaching Training</option>
-                                       <option value="IT-Software">IT-Software,Software Service</option>
-                                       <option value="Industrial">Industrial Products</option>
-                                       <option value="Automobile">Automobile Industries</option>
-                                       <option value="Hardware">Hardware Industries</option>
-                                       </select>
-                                    </div>
-                                    <div class="form-group">
-                                      <select class="form-control custom-select" id="res-Location" name="res-Location">
-                                       <option value="">Select your Location...</option>
-                                       <option value="Chennai">Chennai</option>
-                                       <option value="Bangalore">Bangalore</option>
-                                       <option value="Delhi">Delhi</option>
-                                       <option value="Mumbai">Mumbai</option>
-                                       <option value="Hyderabad">Hyderabad</option>
-                                       </select>
-                                    </div>
-                                     <div class="min-vh-50">
-                                       <textarea class="tinymce d-none" name="content" id="resjobcompany" ></textarea>
-                                    </div>
-                                    <div class="row ml-1 mt-2">
-                                   
-                                     <button class="btn btn-falcon-primary mx-sm-8 ml-1" type="button" onclick="window.location.href='Recruitment.html'">Submit</button>
-                                     <button class="btn btn-falcon-primary ml-2" type="button" onclick="window.location.href='Recruitment.html'">Cancel</button>
-                                     
-                                    </div>
-                                    
-                                  </form>
-                                </div>
-                  </div>
-                  </div>
-                   
-                  </div>
+            <div class="card mb-3">
+                <div class="card-header">
+                    <div class="row overflow-hidden">
+                        <div class="col-8 mt-5 pl-4">
+                            <h4 class="text-success mb-2">Preview Your Job</h4>
+                            <p class="mb-0 text-justify">Insights from our active community will match your job post to
+                                people with similar skills, <br class="d-none d-md-block">experience, and goals — so you
+                                can find the right person for your job.</p>
+                        </div>
+                        <div class="col-4">
+                            <img src="assets/img/Downloads/Introducing-3.png" width="200">
+                        </div>
+                    </div>
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb ml-3">
+                            <li class="breadcrumb-item"><a href="Recruitment.html">Home</a></li>
+                            <li class="breadcrumb-item active" aria-current="page">Preview Your Job</li>
+                        </ol>
+                    </nav>
                 </div>
-          </div>
-         </div>
-          
-   
 
-           
-          </div>
-            
-  
-          
-            
-       </div>
-     </div>
-   <footer>
-     <div class="row no-gutters justify-content-between fs--1 mt-4 mb-3">
-       <div class="col-12 col-sm-auto text-center"></div>
-     </div>
-   </footer>
-   </main>
-    <!-- ===============================================-->
-    <!--    End of Main Content-->
-    <!-- ===============================================-->
+                <div class="card-body bg-light">
+                    <div class="row justify-content-center no-gutters">
+                        <div class="col-lg-7 col-xxl-6 pb-3">
+
+                            <div class="card overflow-hidden">
+                                <div class="card-body  px-4">
+                                    <div class="row ">
+                                        <div class="col-lg-12 col-xxl-6 my-4">
+                                            <form class="form-validation" method="get" action="/jobseek.html"
+                                                  data-options='{"rules":{"confirmPassword":{"equalTo":"#wizard-password"}},"messages":{"confirmPassword":{"equalTo":"Passwords didn&#39;t match"},"terms":{"required":"You must accept terms and privacy policy"}}}'>
+                                                <div class="form-group">
+
+                                                    <input class="form-control" type="text" id="res-title"
+                                                           name="restitle" placeholder="Job Title"/>
+                                                </div>
+                                                <div class="form-group">
+                                                    <input class="form-control" type="text" name="JobType"
+                                                           id="res-JobType" placeholder="Job Type"/>
+                                                </div>
+                                                <div class="form-group">
+                                                    <input class="form-control" type="text" name="Qualification"
+                                                           id="res-Qualification" placeholder="Qualification"/>
+                                                </div>
+                                                <div class="form-group">
+                                                    <input class="form-control" type="text" name="JobLocation"
+                                                           id="res-JobLocation" placeholder="Job Location"/>
+                                                </div>
+                                                <div class="form-row">
+                                                    <div class="col-6">
+                                                        <div class="form-gorup">
+                                                            <input class="form-control" type="text" name="MonthlySalary"
+                                                                   id="res-MonthlySalarymin"
+                                                                   placeholder="Monthly Salary (Min)"/>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-6">
+                                                        <div class="form-group">
+                                                            <input class="form-control" type="text" name="MonthlySalary"
+                                                                   id="res-MonthlySalarymax"
+                                                                   placeholder="Monthly Salary (Max)"/>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label class="fs-0" for="wizard-name">Salary Visible to
+                                                        applicants</label><br>
+                                                    <div class="custom-control custom-radio custom-control-inline ml-1 mr-7">
+                                                        <input class="custom-control-input" id="rescustomRadioInline1"
+                                                               type="radio" name="customRadioInline1">
+                                                        <label class="custom-control-label"
+                                                               for="customRadioInline1">Yes</label>
+                                                    </div>
+                                                    <div class="custom-control custom-radio custom-control-inline">
+                                                        <input class="custom-control-input" id="customRadioInline2"
+                                                               type="radio" name="customRadioInline1">
+                                                        <label class="custom-control-label"
+                                                               for="customRadioInline2">No</label>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <select class="form-control custom-select" id="res-HiringProcess"
+                                                            name="res-HiringProcess">
+                                                        <option value="">Select your Hiring Process ...</option>
+                                                        <option value="any">Group Discussion</option>
+                                                        <option value="above60">Fact to Face</option>
+                                                        <option value="above65">Technical</option>
+                                                        <option value="above70">Written Test</option>
+                                                        <option value="above75">Walk-In</option>
+                                                        <option value="above80">Telephonic</option>
+                                                        <option value="above80">Online Test</option>
+                                                    </select>
+                                                </div>
+                                                <div class="form-row">
+                                                    <div class="col-6">
+                                                        <div class="form-gorup">
+                                                            <label class="fs-0" for="wizard-name">Year of
+                                                                Passing</label>
+                                                            <input class="form-control datetimepicker"
+                                                                   id="reswizard-datepicker1"
+                                                                   placeholder="Hiring Process" type="text"
+                                                                   data-options='{"dateFormat":"d/m/yy"}'/>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-6">
+                                                        <div class="form-group" style="margin-top:32px;">
+                                                            <input class="form-control datetimepicker "
+                                                                   id="reswizard-datepicker2" type="text"
+                                                                   data-options='{"dateFormat":"d/m/yy"}'/>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label class="fs-0" for="wizard-phone">Academic Marks</label>
+                                                    <select class="form-control custom-select" id="res-AcademicMarks"
+                                                            name="AcademicMarks">
+                                                        <option value="">Select your Marks ...</option>
+                                                        <option value="any">Any</option>
+                                                        <option value="above60">10th/12th/Degree - All Above 60%
+                                                        </option>
+                                                        <option value="above65">10th/12th/Degree - Between 65% to 70%
+                                                        </option>
+                                                        <option value="above70">10th/12th/Degree - Between 70% to 75%
+                                                        </option>
+                                                        <option value="above75">10th/12th/Degree - Between 75% to 80%
+                                                        </option>
+                                                        <option value="above80">Above 80%</option>
+                                                    </select>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label class="fs-0" for="wizard-datepicker">Maximum No of
+                                                        Arrears</label>
+                                                    <select class="form-control custom-select" id="res-Arrears"
+                                                            name="Arrears">
+                                                        <option value="">Select your Arrears ...</option>
+                                                        <option value="any">Any</option>
+                                                        <option value="one">1</option>
+                                                        <option value="two">2</option>
+                                                        <option value="three">3</option>
+                                                        <option value="four">4</option>
+                                                        <option value="five">5</option>
+                                                    </select>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label class="fs-0">Skills</label>
+                                                    <div class="form-row ml-0">
+                                                        <select class="test" multiple="multiple" id="res-skills">
+                                                            <option value="Communication">Communication</option>
+                                                            <option value="Teamwork">Teamwork</option>
+                                                            <option value="Problemsolving">Problem solving</option>
+                                                            <option value="Initiative">Initiative and enterprise
+                                                            </option>
+                                                            <option value="Self-management">Self-management</option>
+                                                            <option value="Learning">Learning</option>
+                                                            <option value="Technology">Technology</option>
+                                                            <option value="TimeManagement">Time Management</option>
+                                                            <option value="Leadership">Leadership</option>
+                                                            <option value="CriticalThinking">Critical Thinking</option>
+                                                            <option value="Adaptability">Adaptability</option>
+                                                            <option value="Responsibility">Responsibilityg</option>
+                                                            <option value="Creativity">Creativity</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <div class="form-row">
+                                                    <div class="col-6">
+                                                        <div class="form-gorup">
+                                                            <label class="fs-0" for="wizard-name">Experience</label>
+                                                            <input class="form-control datetimepicker"
+                                                                   id="reswizard-datepicker3"
+                                                                   placeholder="Hiring Process" type="text"
+                                                                   data-options='{"dateFormat":"d/m/yy"}'/>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-6">
+                                                        <div class="form-group" style="margin-top:32px;">
+                                                            <input class="form-control datetimepicker "
+                                                                   id="reswizard-datepicker4" type="text"
+                                                                   data-options='{"dateFormat":"d/m/yy"}'/>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="form-group">
+                                                    <select class="form-control custom-select" id="res-yourgender"
+                                                            name="res-gender">
+                                                        <option value="">Select your Gender ...</option>
+                                                        <option value="Male">Male</option>
+                                                        <option value="Female">Female</option>
+                                                        <option value="Other">Other</option>
+                                                    </select>
+                                                </div>
+                                                <div class="form-group">
+                                                    <input class="form-control" type="email" name="email"
+                                                           placeholder="OFFICIAL EMAIL ID" id="res-OFFICIALEMAIL"/>
+                                                </div>
+                                                <div class="form-group">
+                                                    <input class="form-control" type="password" name="password"
+                                                           placeholder="CHOOSE YOUR OWN PASSWORD" id="res-OWNPASSWORD"/>
+                                                </div>
+                                                <div class="form-group">
+                                                    <select class="form-control custom-select" id="res-company"
+                                                            name="res-company">
+                                                        <option value="">Select your company...</option>
+                                                        <option value="TechMahindra">Tech Mahindra</option>
+                                                        <option value="ElicoHealthcare">Elico Healthcare</option>
+                                                        <option value="Infosi">Infosi</option>
+                                                        <option value="TCS">TCS</option>
+                                                        <option value="Amazon">Amazon</option>
+                                                    </select>
+                                                </div>
+                                                <div class="form-group">
+                                                    <select class="form-control custom-select" id="res-Industry"
+                                                            name="res-Industry">
+                                                        <option value="">Select your Industry...</option>
+                                                        <option value="Education">Education,Teaching Training</option>
+                                                        <option value="IT-Software">IT-Software,Software Service
+                                                        </option>
+                                                        <option value="Industrial">Industrial Products</option>
+                                                        <option value="Automobile">Automobile Industries</option>
+                                                        <option value="Hardware">Hardware Industries</option>
+                                                    </select>
+                                                </div>
+                                                <div class="form-group">
+                                                    <select class="form-control custom-select" id="res-Location"
+                                                            name="res-Location">
+                                                        <option value="">Select your Location...</option>
+                                                        <option value="Chennai">Chennai</option>
+                                                        <option value="Bangalore">Bangalore</option>
+                                                        <option value="Delhi">Delhi</option>
+                                                        <option value="Mumbai">Mumbai</option>
+                                                        <option value="Hyderabad">Hyderabad</option>
+                                                    </select>
+                                                </div>
+                                                <div class="min-vh-50">
+                                                    <textarea class="tinymce d-none" name="content"
+                                                              id="resjobcompany"></textarea>
+                                                </div>
+                                                <div class="row ml-1 mt-2">
+
+                                                    <button class="btn btn-falcon-primary mx-sm-8 ml-1" type="button"
+                                                            onclick="window.location.href='Recruitment.html'">Submit
+                                                    </button>
+                                                    <button class="btn btn-falcon-primary ml-2" type="button"
+                                                            onclick="window.location.href='Recruitment.html'">Cancel
+                                                    </button>
+
+                                                </div>
+
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
 
+            </div>
 
 
-    <!-- ===============================================-->
-    <!--    JavaScripts-->
-    <!-- ===============================================-->
-    <script src="assets/js/jquery.min.js"></script>
-    <script src="assets/js/popper.min.js"></script>
-    <script src="assets/js/bootstrap.min.js"></script>
-    <script src="assets/lib/@fortawesome/all.min.js"></script>
-    <script src="assets/lib/stickyfilljs/stickyfill.min.js"></script>
-    <script src="assets/lib/sticky-kit/sticky-kit.min.js"></script>
-    <script src="assets/lib/is_js/is.min.js"></script>
-    <script src="assets/lib/lodash/lodash.min.js"></script>
-    <script src="assets/lib/prismjs/prism.js"></script>
-    <script src="assets/lib/twitter-bootstrap-wizard/jquery.bootstrap.wizard.min.js"></script>
-    <script src="assets/lib/jquery-validation/jquery.validate.min.js"></script>
-    <script src="assets/lib/flatpickr/flatpickr.min.js"></script>
-    <script src="assets/lib/dropzone/dropzone.min.js"></script>
-    <script src="assets/lib/lottie/lottie.min.js"></script>
-    <script src="assets/js/theme.js"></script>
-    <script src="assets/js/previewlist.js"></script> 
-    <script src="assets/lib/tinymce/tinymce.min.js"></script>
-<script src="assets/js/fSelect.js"></script> 
+        </div>
+    </div>
+    <footer>
+        <div class="row no-gutters justify-content-between fs--1 mt-4 mb-3">
+            <div class="col-12 col-sm-auto text-center"></div>
+        </div>
+    </footer>
+</main>
+<!-- ===============================================-->
+<!--    End of Main Content-->
+<!-- ===============================================-->
+
+
+<!-- ===============================================-->
+<!--    JavaScripts-->
+<!-- ===============================================-->
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/js/popper.min.js"></script>
+<script src="assets/js/bootstrap.min.js"></script>
+<script src="assets/lib/@fortawesome/all.min.js"></script>
+<script src="assets/lib/stickyfilljs/stickyfill.min.js"></script>
+<script src="assets/lib/sticky-kit/sticky-kit.min.js"></script>
+<script src="assets/lib/is_js/is.min.js"></script>
+<script src="assets/lib/lodash/lodash.min.js"></script>
+<script src="assets/lib/prismjs/prism.js"></script>
+<script src="assets/lib/twitter-bootstrap-wizard/jquery.bootstrap.wizard.min.js"></script>
+<script src="assets/lib/jquery-validation/jquery.validate.min.js"></script>
+<script src="assets/lib/flatpickr/flatpickr.min.js"></script>
+<script src="assets/lib/dropzone/dropzone.min.js"></script>
+<script src="assets/lib/lottie/lottie.min.js"></script>
+<script src="assets/js/theme.js"></script>
+<script src="assets/js/previewlist.js"></script>
+<script src="assets/lib/tinymce/tinymce.min.js"></script>
+<script src="assets/js/fSelect.js"></script>
 <script type="text/javascript">
 (function($) {
     $(function() {
         window.fs_test = $('.test').fSelect();
     });
 })(jQuery);
+
+
 </script>
 <script type="text/javascript">
 function jobpreview1()
@@ -336,8 +378,10 @@ window.addEventListener('load',()=>{
 	});          
 
 
+
+
 </script>
-	
-  </body>
+
+</body>
 
 </html>

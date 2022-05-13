@@ -16,9 +16,10 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 from uploader import views
+
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path(r'upload/',views.Homepage.as_view(),name = 'homepage'),
-    path(r'',views.MyFormUploderView.as_view(),name = "view"),
+    path(r'upload/', views.Homepage.as_view(), name='homepage'),
+    path(r'', views.MyFormUploderView.as_view(), name="view"),
 
 ]
